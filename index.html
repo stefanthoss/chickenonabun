@@ -1,0 +1,17 @@
+---
+title: Chicken On A Bun
+---
+
+{% for post in site.posts %}
+<h2>{{ post.title }}</h2>
+<p>
+  {{ post.address }}{% if post.multiple-loc %} (multiple locations in {{
+  post.multiple-loc }}){% endif %}<br />
+  {% if post.rating %}Rating: {{ post.rating }}/10<br />{% endif %}
+  <a href="{{ post.website }}">Website</a> |
+  <a href="{{ post.foursquare-link }}">Foursquare</a><br />
+  Visited: {{ post.date | date_to_string }}<br /><br />
+  {{ post.excerpt }}
+</p>
+<hr />
+{% endfor %}

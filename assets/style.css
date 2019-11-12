@@ -1,0 +1,14 @@
+body {
+  margin: 60px auto;
+  font-family: "Courier New", Courier, monospace;
+  background-color: #ffffee;
+  color: #444444;
+
+  width: 800px;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.highlight {
+  font-weight: bold;
+}
