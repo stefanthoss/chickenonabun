@@ -3,15 +3,19 @@ title: Chicken On A Bun
 ---
 
 {% for post in site.posts %}
-<h2>{{ post.title }}</h2>
+<h2>{{ post.title }}{% if post.rating %} ({{ post.rating }}/10){% endif %}</h2>
 <p>
   {{ post.address }}{% if post.multiple-loc %} (multiple locations in {{
-  post.multiple-loc }}){% endif %}<br />
-  {% if post.rating %}Rating: {{ post.rating }}/10<br />{% endif %}
-  <a href="{{ post.website }}">Website</a> |
-  <a href="{{ post.foursquare-link }}">Foursquare</a><br />
-  Visited: {{ post.date | date_to_string }}<br /><br />
-  {{ post.excerpt }}
+  post.multiple-loc }}){% endif %}
 </p>
+<p>
+  <a href="{{ post.website }}">Website</a> |
+  <a href="{{ post.foursquare-link }}">Foursquare</a>
+</p>
+{% if post.side-order %}
+<p><b>What to order on the side?</b> {{ post.side-order }}.</p>
+{% endif %}
+<p>{{ post.excerpt }}</p>
+<!-- <p>Visited: {{ post.date | date_to_string }}</p> -->
 <hr />
 {% endfor %}
