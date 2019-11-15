@@ -3,10 +3,11 @@ body {
   font-family: "Courier New", Courier, monospace;
   background-color: #ffffee;
   color: #444444;
-
   width: 800px;
-  font-size: 18px;
-  line-height: 26px;
+}
+
+h1 {
+  font-size: 60px;
 }
 
 .highlight {
