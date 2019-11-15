@@ -14,8 +14,7 @@ title: Chicken On A Bun
 </p>
 {% if post.side-order %}
 <p><b>What to order on the side?</b> {{ post.side-order }}.</p>
-{% endif %}
-<p>{{ post.excerpt }}</p>
+{% endif %} {{ post.excerpt }}
 <!-- <p>Visited: {{ post.date | date_to_string }}</p> -->
 <hr />
 {% endfor %}
