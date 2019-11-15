@@ -3,12 +3,38 @@ body {
   font-family: "Courier New", Courier, monospace;
   background-color: #ffffee;
   color: #444444;
-
   width: 800px;
-  font-size: 18px;
-  line-height: 26px;
+}
+
+h1 {
+  font-size: 60px;
+}
+
+p {
+  margin: 5px 0px 10px 0px;
 }
 
 .highlight {
   font-weight: bold;
+}
+
+.header-icon {
+  vertical-align: middle;
+  height: 60px;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    margin: 10px auto;
+    padding: 0 20px 0 20px;
+    width: auto;
+  }
+
+  h1 {
+    font-size: 35px;
+  }
+
+  .header-icon {
+    display: none;
+  }
 }
