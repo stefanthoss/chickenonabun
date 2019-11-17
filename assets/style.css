@@ -14,13 +14,13 @@ p {
   margin: 5px 0px 10px 0px;
 }
 
-.highlight {
-  font-weight: bold;
-}
-
 .header-icon {
   vertical-align: middle;
   height: 60px;
+}
+
+.highlight {
+  font-weight: bold;
 }
 
 @media screen and (max-width: 600px) {
@@ -31,10 +31,11 @@ p {
   }
 
   h1 {
-    font-size: 35px;
+    font-size: 30px;
   }
 
   .header-icon {
-    display: none;
+    vertical-align: middle;
+    height: 30px;
   }
 }
