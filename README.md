@@ -1,4 +1,4 @@
-# Chicken On A Bun
+# [Chicken On A Bun](https://chickenonabun.com/)
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/99bf52ae86ded5e3b9f3/maintainability)](https://codeclimate.com/github/stefanthoss/chickenonabun.com/maintainability)
 [![Security](https://hakiri.io/github/stefanthoss/chickenonabun.com/master.svg)](https://hakiri.io/github/stefanthoss/chickenonabun.com/master)

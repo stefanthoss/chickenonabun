@@ -7,4 +7,5 @@ side-order: "Crispy potato puffs with white truffle essence"
 website: "https://www.gregoirerestaurant.com"
 ---
 
-So juicy, so flavorful, and the perfect breadroll - you have to try this when you're in Berkeley! Grab it to go and enjoy it somewhere on the UC campus.
+So juicy, so flavorful, and the perfect breadroll - you have to try this when you're in Berkeley!
+Grab it to go and enjoy it somewhere on the UC campus.
