@@ -3,6 +3,7 @@ title: Chicken On A Bun
 ---
 
 {% for post in site.posts %}
+<div class="restaurant">
 <h2>{{ post.title }}{% if post.rating %} ({{ post.rating }}/10){% endif %}</h2>
 <p>
   {{ post.address }}{% if post.multiple-loc %} (multiple locations in {{
@@ -16,5 +17,5 @@ title: Chicken On A Bun
 <p><b>What to order on the side?</b> {{ post.side-order }}.</p>
 {% endif %} {{ post.excerpt }}
 <!-- <p>Visited: {{ post.date | date_to_string }}</p> -->
-<hr />
+</div>
 {% endfor %}

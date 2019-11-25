@@ -1,9 +1,13 @@
 body {
   margin: 60px auto;
   font-family: "Courier New", Courier, monospace;
-  background-color: #ffffee;
+  background-color: #eeeebb;
   color: #444444;
   width: 800px;
+}
+
+nav {
+  margin-bottom: 20px;
 }
 
 h1 {
@@ -21,6 +25,12 @@ p {
 
 .highlight {
   font-weight: bold;
+}
+
+.restaurant {
+  background-color: #ffffee;
+  padding: 10px 15px 10px 15px;
+  margin-bottom: 20px;
 }
 
 @media screen and (max-width: 600px) {
