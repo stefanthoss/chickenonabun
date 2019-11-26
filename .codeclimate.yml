@@ -2,11 +2,12 @@ version: "2"
 plugins:
   bundler-audit:
     enabled: true
+  csslint:
+    enabled: true
   eslint:
     enabled: true
+    channel: "eslint-4"
   markdownlint:
     enabled: true
   rubocop:
-    enabled: true
-  stylelint:
     enabled: true
