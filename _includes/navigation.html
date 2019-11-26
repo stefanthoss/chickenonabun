@@ -1,3 +1,5 @@
-<nav>
-  <a href="/"{% if page.url == "/" %} class="highlight"{% endif %}>Home</a> | <a href="/about.html"{% if page.url == "/about.html" %} class="highlight"{% endif %}>About</a>
+<nav id="navigation_bar">
+  <a href="/#by_date" id="by_date_link">All Sandwiches</a> ... 
+  <a href="/#by_rating" id="by_rating_link">by rating</a> | 
+  <a href="/about.html"{% if page.url == "/about.html" %} class="highlight"{% endif %}>About</a>
 </nav>
