@@ -1,6 +1,18 @@
 ---
 layout: default
 ---
-<h1>{{ post.title }}</h1>
 
-<p>{{ content }}</p>
+<div class="restaurant">
+  {{ page.excerpt }}
+  {% if page.side-order %}
+  <p><b>What to order on the side?</b> {{ page.side-order }}.</p>
+  {% endif %}
+  <p>
+    <b>Where?</b> {{ page.address }}{% if page.multiple-loc %} (multiple locations in {{
+      page.multiple-loc }}){% endif %}
+  </p>
+  <p>
+    <a href="{{ page.website }}">Website</a> |
+    <a href="{{ page.foursquare-link }}">Foursquare</a>
+  </p>
+</div>
