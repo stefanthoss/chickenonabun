@@ -1,3 +1,4 @@
+url: "https://chickenonabun.com"
 defaults:
   - scope:
       path: ""
@@ -8,3 +9,5 @@ defaults:
       path: ""
     values:
       layout: "default"
+plugins:
+  - jekyll-sitemap

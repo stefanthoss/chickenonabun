@@ -5,17 +5,20 @@
     <title>{{ page.title }}</title>
     <meta name="description" content="All about fried chicken sandwiches." />
     <meta name="viewport" content="width=device-width" />
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'"
+    />
     <link rel="icon" type="image/png" href="/img/chicken.png" />
     <link rel="stylesheet" href="/assets/style.css" />
+    <script type="text/javascript" src="/assets/scripts.js"></script>
   </head>
 
   <body>
-    {% include navigation.html %}
     <h1>
       <img src="/img/chicken.png" alt="Chicken icon" class="header-icon" />{{
       page.title }}
     </h1>
-    {{ content }}
+    {% include navigation.html %} {{ content }}
   </body>
 </html>
