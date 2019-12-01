@@ -4,8 +4,9 @@ layout: default
 
 <div class="restaurant">
   {{ content }}
+  {% if page.rating %}<p><b>Rating?</b> {{ page.rating }}/10</p>{% endif %}
   {% if page.side-order %}
-  <p><b>What to order on the side?</b> {{ page.side-order }}.</p>
+  <p><b>What to order on the side?</b> {{ page.side-order }}</p>
   {% endif %}
   <p>
     <b>Where?</b> {{ page.address }}{% if page.multiple-loc %} (multiple locations in {{
@@ -15,4 +16,6 @@ layout: default
     <a href="{{ page.website }}">Website</a> |
     <a href="{{ page.foursquare-link }}">Foursquare</a>
   </p>
+  <br />
+  <p>We visited on {{ page.date | date_to_string }}.
 </div>
