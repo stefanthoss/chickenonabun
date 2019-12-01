@@ -9,8 +9,8 @@ The website about fried chicken sandwiches. Built using GitHub Pages.
 
 ## RuboCop
 
-Run RuboCop with `rubocop-jekyll` (unfortunately not supported by [codeclimate-rubocop](https://github.com/codeclimate/codeclimate-rubocop):
+Run RuboCop with `rubocop-jekyll` (unfortunately not supported by [codeclimate-rubocop](https://github.com/codeclimate/codeclimate-rubocop)):
 
-```
+```shell
 bundle exec rubocop
 ```
