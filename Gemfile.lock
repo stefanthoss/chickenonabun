@@ -263,8 +263,9 @@ PLATFORMS
 
 DEPENDENCIES
   github-pages
+  jekyll-seo-tag
   jekyll-sitemap
   rubocop-jekyll
 
 BUNDLED WITH
-   2.0.1
+   2.0.2
