@@ -1,4 +1,7 @@
-url: "https://chickenonabun.com"
+tagline: "All about fried chicken sandwiches."
+logo: /img/chicken.png
+url: https://chickenonabun.com
+
 defaults:
   - scope:
       path: ""
@@ -9,5 +12,7 @@ defaults:
       path: ""
     values:
       layout: "default"
+
 plugins:
+  - jekyll-seo-tag
   - jekyll-sitemap
