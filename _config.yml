@@ -16,7 +16,7 @@ defaults:
 plugins_dir: ./_plugins
 jekyll_get:
   - data: github
-    json: 'https://api.github.com/users/stefanthoss/repos'
+    json: "https://api.github.com/users/stefanthoss/repos"
     cache: false
 
 plugins:

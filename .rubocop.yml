@@ -1,6 +1,2 @@
-require: rubocop-jekyll
-inherit_gem:
-  rubocop-jekyll: .rubocop.yml
-
 Style/FrozenStringLiteralComment:
   Enabled: false

@@ -15,11 +15,3 @@ Test the site locally:
 ```shell
 jekyll server -w
 ```
-
-## RuboCop
-
-Run RuboCop with `rubocop-jekyll` (unfortunately not supported by [codeclimate-rubocop](https://github.com/codeclimate/codeclimate-rubocop)):
-
-```shell
-bundle exec rubocop
-```
