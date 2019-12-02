@@ -3,14 +3,12 @@ cache: bundler
 branches:
   only:
   - master
-script:
-  - JEKYLL_ENV=production bundle exec jekyll build --destination site
 before_install:
   - gem install bundler
 deploy:
   provider: pages
   skip_cleanup: true
   github_token: $GITHUB_TOKEN
-  keep_history: true
+  fqdn: chickenonabun.com
   on:
     branch: master
