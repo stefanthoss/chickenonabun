@@ -22,14 +22,3 @@ jekyll_get:
 plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
-
-exclude:
-  - *.yml
-  - .eslintrc
-  - .gitignore
-  - .markdown.style.rb
-  - .mdlrc
-  - .ruby-version
-  - Gemfile
-  - Gemfile.lock
-  - README.md
