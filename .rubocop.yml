@@ -1,6 +1,6 @@
-require: rubocop-jekyll
-inherit_gem:
-  rubocop-jekyll: .rubocop.yml
+AllCops:
+  Exclude:
+    - '_plugins/jekyll_get.rb'
 
 Style/FrozenStringLiteralComment:
   Enabled: false

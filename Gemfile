@@ -1,6 +1,9 @@
-source "https://rubygems.org"
+source 'https://rubygems.org'
 
-gem "github-pages", :group => :jekyll_plugins
-gem "jekyll-seo-tag"
-gem "jekyll-sitemap"
-gem "rubocop-jekyll"
+gem 'hash-joiner'
+gem 'jekyll'
+gem 'jekyll-seo-tag'
+gem 'jekyll-sitemap'
+gem 'json'
+
+gem 'rake', group: :test

@@ -12,4 +12,4 @@ plugins:
   markdownlint:
     enabled: true
   rubocop:
-    enabled: false
+    enabled: true
