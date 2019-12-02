@@ -1,7 +1,7 @@
-source "https://rubygems.org"
+source 'https://rubygems.org'
 
-gem "hash-joiner"
-gem "jekyll"
-gem "jekyll-seo-tag"
-gem "jekyll-sitemap"
-gem "json"
+gem 'hash-joiner'
+gem 'jekyll'
+gem 'jekyll-seo-tag'
+gem 'jekyll-sitemap'
+gem 'json'
