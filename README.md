@@ -15,3 +15,7 @@ Test the site locally:
 ```shell
 jekyll server -w
 ```
+
+## Credits
+
+The chicken icon is from <openmoji.org> and processed using <realfavicongenerator.net>.
