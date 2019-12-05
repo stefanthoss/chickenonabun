@@ -1,0 +1,40 @@
+.header-icon {
+  height: 30px;
+  vertical-align: middle;
+}
+
+.highlight {
+  font-weight: bold;
+}
+
+.restaurant {
+  background-color: #ffffee;
+  margin-bottom: 20px;
+  padding: 10px 15px 10px 15px;
+}
+
+body {
+  background-color: #ffeebb;
+  color: #444444;
+  font-family: "Courier New", Courier, monospace;
+  margin: 10px auto;
+  padding: 0 20px 0 20px;
+  width: auto;
+}
+
+h1 {
+  font-size: 30px;
+}
+
+h2 a {
+  color: #444444;
+  text-decoration: none;
+}
+
+nav {
+  margin-bottom: 20px;
+}
+
+p {
+  margin: 5px 0 10px 0;
+}

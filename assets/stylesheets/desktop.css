@@ -1,6 +1,6 @@
 .header-icon {
-  vertical-align: middle;
   height: 60px;
+  vertical-align: middle;
 }
 
 .highlight {
@@ -36,21 +36,4 @@ nav {
 
 p {
   margin: 5px 0 10px 0;
-}
-
-@media screen and (max-width: 600px) {
-  .header-icon {
-    height: 30px;
-    vertical-align: middle;
-  }
-
-  body {
-    margin: 10px auto;
-    padding: 0 20px 0 20px;
-    width: auto;
-  }
-
-  h1 {
-    font-size: 30px;
-  }
 }

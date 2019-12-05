@@ -6,8 +6,6 @@
 [![W3C Validation](https://img.shields.io/w3c-validation/html?targetUrl=https%3A%2F%2Fchickenonabun.com)](https://validator.nu/?doc=https%3A%2F%2Fchickenonabun.com)
 [![Mozilla HTTP Observatory Grade](https://img.shields.io/mozilla-observatory/grade/chickenonabun.com?publish)](https://observatory.mozilla.org/analyze/chickenonabun.com)
 
-The website about fried chicken sandwiches. Built using Travis CI and hosted with GitHub Pages.
-
 ## Local testing
 
 Test the site locally:
@@ -15,3 +13,7 @@ Test the site locally:
 ```shell
 jekyll server -w
 ```
+
+## Credits
+
+The chicken icon is from [openmoji.org](https://openmoji.org) and processed using [realfavicongenerator.net](https://realfavicongenerator.net).
