@@ -4,6 +4,7 @@ address: "970 N Western Ave, Los Angeles, CA 90029"
 foursquare-link: http://4sq.com/2Cjj5sk
 multiple-loc: "Los Angeles"
 rating: 8
+image: /assets/images/daves-hot-chicken.jpg
 side-order: "Kale slaw when you feel healthy, otherwise fries"
 website: https://www.daveshotchicken.com
 ---

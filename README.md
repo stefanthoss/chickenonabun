@@ -14,6 +14,12 @@ Test the site locally:
 jekyll server -w
 ```
 
+## Resize images
+
+```shell
+convert assets/images/image.jpg -resize 900x900 assets/images/image.jpg
+```
+
 ## Credits
 
 The chicken icon is from [openmoji.org](https://openmoji.org) and processed using [realfavicongenerator.net](https://realfavicongenerator.net).

@@ -13,9 +13,11 @@ layout: default
       page.multiple-loc }}){% endif %}
   </p>
   <p>
-    <a href="{{ page.website }}">Website</a> |
+    <b>Links?</b> <a href="{{ page.website }}">Website</a> |
     <a href="{{ page.foursquare-link }}">Foursquare</a>
   </p>
-  <br />
+  {% if page.image %}<p>
+    <img src="{{ page.image }}" alt="{{ page.title }} sandwich" class="sandwich-image" />
+  </p>{% endif %}
   <p>We visited on {{ page.date | date_to_string }}.
 </div>
