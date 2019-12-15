@@ -11,7 +11,7 @@
 Test the site locally:
 
 ```shell
-jekyll server -w
+jekyll server -w --drafts
 ```
 
 ## Resize images
