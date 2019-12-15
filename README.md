@@ -11,7 +11,13 @@
 Test the site locally:
 
 ```shell
-jekyll server -w
+jekyll server -w --drafts
+```
+
+## Resize images
+
+```shell
+convert assets/images/image.jpg -resize 900x900 assets/images/image.jpg
 ```
 
 ## Credits

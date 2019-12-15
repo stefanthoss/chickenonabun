@@ -13,6 +13,12 @@
   padding: 10px 15px 10px 15px;
 }
 
+.sandwich-image {
+  display: block;
+  margin: 20px auto;
+  width: 600px;
+}
+
 body {
   background-color: #ffeebb;
   color: #444444;
