@@ -26,5 +26,6 @@ jekyll_get:
     cache: false
 
 plugins:
+  - jekyll-last-modified-at
   - jekyll-seo-tag
   - jekyll-sitemap
