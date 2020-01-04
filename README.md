@@ -8,13 +8,15 @@
 
 ## Local testing
 
-Test the site locally:
+Test the site locally with drafts:
 
 ```shell
 jekyll server -w --drafts
 ```
 
 ## Resize images
+
+Use ImageMagick to resize the images before committing:
 
 ```shell
 convert assets/images/image.jpg -resize 900x900 assets/images/image.jpg
