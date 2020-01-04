@@ -9,6 +9,6 @@ website: https://www.pinestatebiscuits.com
 ---
 
 The biscuit is tender. The chicken is crispy. The gravy is smooth and flavorful. Doesn't matter whether you come here
-because you're a fan of biscuits or you like chickens on buns - you order _The Reggie_. There might be a wait, but this
+because you're a fan of biscuits or you like chickens on buns - you order *The Reggie*. There might be a wait, but this
 is the perfect breakfast. Especially when the amazing pecan pie is the seasonal pie, which you must get (with whipped
 cream, of course).
