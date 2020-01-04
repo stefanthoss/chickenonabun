@@ -7,5 +7,5 @@ website: https://www.eatsweetbird.com/
 ---
 
 Dangerously spicy for those who live on the edge. We like a good spicy chicken sandwich, but we can't even imagine
-getting the _Fire Bird_; just opt for the spicy chicken sandwich instead. Pick up some boba at Mini Monster, also in the
+getting the *Fire Bird*; just opt for the spicy chicken sandwich instead. Pick up some boba at Mini Monster, also in the
 Anaheim Packing District, and head outside to have a chill lunch.
