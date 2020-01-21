@@ -12,6 +12,7 @@ title: Chicken On A Bun
     <h2><a href="{{ post.url }}">
       {{ post.title }}{% if post.rating %} ({{ post.rating }}/10){% endif %}
     </a></h2>
+    {% geocode_address post.address %}
     {{ post.content }}
     {% if post.side-order %}
     <p><b>What to order on the side?</b> {{ post.side-order }}</p>
