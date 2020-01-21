@@ -9,8 +9,9 @@ class GeocodeAddressTag < Liquid::Tag
 
   def render(context)
     url = "https://nominatim.openstreetmap.org/search?format=json&limit=1&q=#{context[@content]}"
-    JSON.load(open(URI.encode(url))).each do |coord|
-      "Coord: #{coord}"
+    results = JSON.load(open(URI.encode(url)))
+    if results.any?
+      "#{results.first['lat']},#{results.first['lon']}"
     end
   end
 

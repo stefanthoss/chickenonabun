@@ -6,13 +6,13 @@ title: Chicken On A Bun
   {% for post in site.posts %}
   <div
     class="restaurant"
-    data-rating="{{ post.rating | prepend: '0000' | slice: -4, 4 }}"
     data-date="{{ post.date }}"
+    data-loc="{% geocode_address post.address %}"
+    data-rating="{{ post.rating | prepend: '0000' | slice: -4, 4 }}"
   >
     <h2><a href="{{ post.url }}">
       {{ post.title }}{% if post.rating %} ({{ post.rating }}/10){% endif %}
     </a></h2>
-    {% geocode_address post.address %}
     {{ post.content }}
     {% if post.side-order %}
     <p><b>What to order on the side?</b> {{ post.side-order }}</p>
