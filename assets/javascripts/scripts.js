@@ -12,7 +12,23 @@ function sortRestaurants(sortKey) {
     ids.push(obj);
   }
 
-  ids.sort((a, b) => (a.key < b.key ? 1 : -1));
+  if(sortKey != "location") {
+    console.log("Regular sorting by " + sortKey) // TODO remove
+    ids.sort((a, b) => (a.key < b.key ? 1 : -1));
+  } else {
+    console.log("Special sorting by location") // TODO remove
+
+    function position_success(pos) {
+      console.log("Current position is: " + pos.coords.latitude + "," + pos.coords.longitude);
+    }
+
+    function position_error(err) {
+      console.warn("Could not get current position (" + err.code + "): " +err.message);
+      // TODO forward to /#date
+    }
+
+    navigator.geolocation.getCurrentPosition(position_success, position_error);
+  }
 
   for (i = 0; i < ids.length; i++) {
     parent.appendChild(ids[i].element);

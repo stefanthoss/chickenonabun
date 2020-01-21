@@ -7,7 +7,7 @@ title: Chicken On A Bun
   <div
     class="restaurant"
     data-date="{{ post.date }}"
-    data-loc="{% geocode_address post.address %}"
+    data-location="{% geocode_address post.address %}"
     data-rating="{{ post.rating | prepend: '0000' | slice: -4, 4 }}"
   >
     <h2><a href="{{ post.url }}">
