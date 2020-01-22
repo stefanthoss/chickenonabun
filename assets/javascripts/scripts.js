@@ -1,14 +1,14 @@
-var current_position;
+var current_coords;
 
 function position_success(position) {
-  current_position = [position.coords.latitude, position.coords.longitude];
-  console.log("Current position is: " + current_position);
+  current_coords = [position.coords.latitude, position.coords.longitude];
+  console.log("Current position is: " + current_coords); // TODO remove
   sortRestaurants("location");
 }
 
 function position_error(error) {
   console.warn("Could not get current position (" + error.code + "): " + error.message);
-  // TODO forward to /#date
+  window.history.back();
 }
 
 function sortRestaurants(sortKey) {
@@ -23,10 +23,10 @@ function sortRestaurants(sortKey) {
     obj.element = children[i];
     sort_param = children[i].getAttribute("data-" + sortKey);
     if(sortKey == "location") {
-      restaurant_position = sort_param.split(",");
-      if(restaurant_position.length == 2) {
-        console.log(restaurant_position);
-        console.log(haversine(current_position, restaurant_position));
+      restaurant_coords = sort_param.split(",");
+      if(restaurant_coords.length == 2) {
+        console.log(restaurant_coords); // TODO remove
+        console.log(haversine(current_coords, restaurant_coords)); // TODO remove
       } else {
         obk.key = "";
       }
