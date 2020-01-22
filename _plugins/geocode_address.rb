@@ -1,5 +1,5 @@
-require 'json'
-
+# This class provides a liquid tag that translates an address to geo coordinates
+# in the form `[lat,lng]`.
 class GeocodeAddressTag < Liquid::Tag
   def initialize(tag_name, content, tokens)
     super
@@ -7,8 +7,9 @@ class GeocodeAddressTag < Liquid::Tag
   end
 
   def render(context)
-    url = "https://nominatim.openstreetmap.org/search?format=json&limit=1&q=#{context[@content]}"
-    results = JSON.load(open(URI.encode(url)))
+    url = "https://nominatim.openstreetmap.org/search?format=json&limit=1"\
+          "&q=#{CGI.escape(context[@content])}"
+    results = JSON.parse(open(url).read)
     "[#{results.first['lat']},#{results.first['lon']}]" if results.any?
   end
 

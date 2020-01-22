@@ -42,7 +42,6 @@ GEM
       jekyll (>= 3.7, < 5.0)
     jekyll-watch (2.2.1)
       listen (~> 3.0)
-    json (2.3.0)
     kramdown (2.1.0)
     kramdown-parser-gfm (1.1.0)
       kramdown (~> 2.0)
@@ -76,7 +75,6 @@ DEPENDENCIES
   jekyll-last-modified-at
   jekyll-seo-tag
   jekyll-sitemap
-  json
   rake
 
 BUNDLED WITH

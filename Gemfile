@@ -5,6 +5,5 @@ gem 'jekyll'
 gem 'jekyll-last-modified-at'
 gem 'jekyll-seo-tag'
 gem 'jekyll-sitemap'
-gem 'json'
 
 gem 'rake', group: :test
