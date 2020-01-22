@@ -1,3 +1,16 @@
+var current_position;
+
+function position_success(position) {
+  current_position = [position.coords.latitude, position.coords.longitude];
+  console.log("Current position is: " + current_position);
+  sortRestaurants("location");
+}
+
+function position_error(error) {
+  console.warn("Could not get current position (" + error.code + "): " + error.message);
+  // TODO forward to /#date
+}
+
 function sortRestaurants(sortKey) {
   var parent = document.getElementById("restaurant-overview");
   var children = parent.getElementsByClassName("restaurant");
@@ -8,27 +21,24 @@ function sortRestaurants(sortKey) {
   for (i = 0; i < children.length; i++) {
     obj = {};
     obj.element = children[i];
-    obj.key = children[i].getAttribute("data-" + sortKey);
+    sort_param = children[i].getAttribute("data-" + sortKey);
+    if(sortKey == "location") {
+      restaurant_position = sort_param.split(",");
+      if(restaurant_position.length == 2) {
+        console.log(restaurant_position);
+        console.log(haversine(current_position, restaurant_position));
+      } else {
+        obk.key = "";
+      }
+    } else {
+      obj.key = sort_param;
+    }
     ids.push(obj);
   }
 
-  if(sortKey != "location") {
-    console.log("Regular sorting by " + sortKey) // TODO remove
-    ids.sort((a, b) => (a.key < b.key ? 1 : -1));
-  } else {
-    console.log("Special sorting by location") // TODO remove
+  console.log(ids); // TODO remove
 
-    function position_success(pos) {
-      console.log("Current position is: " + pos.coords.latitude + "," + pos.coords.longitude);
-    }
-
-    function position_error(err) {
-      console.warn("Could not get current position (" + err.code + "): " +err.message);
-      // TODO forward to /#date
-    }
-
-    navigator.geolocation.getCurrentPosition(position_success, position_error);
-  }
+  ids.sort((a, b) => (a.key < b.key ? 1 : -1));
 
   for (i = 0; i < ids.length; i++) {
     parent.appendChild(ids[i].element);
@@ -43,7 +53,13 @@ function sortEvent() {
     sortKey = "date";
   }
 
-  sortRestaurants(sortKey);
+  if(sortKey == "location") {
+    console.log("Special sorting by location") // TODO remove
+    navigator.geolocation.getCurrentPosition(position_success, position_error);
+  } else {
+    sortRestaurants(sortKey);
+  }
+
   document
     .getElementById("nav-bar")
     .querySelectorAll("a")
