@@ -57,7 +57,3 @@ var haversine = (function () {
   }
 
 })()
-
-if (typeof module !== 'undefined' && module.exports) {
-  module.exports = haversine
-}
