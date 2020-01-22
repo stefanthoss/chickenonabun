@@ -2,7 +2,6 @@ var current_coords;
 
 function position_success(position) {
   current_coords = [position.coords.latitude, position.coords.longitude];
-  console.log("Current position is: " + current_coords); // TODO remove
   sortRestaurants("location");
 }
 
@@ -14,21 +13,23 @@ function position_error(error) {
 function sortRestaurants(sortKey) {
   var parent = document.getElementById("restaurant-overview");
   var children = parent.getElementsByClassName("restaurant");
-  var ids = [],
-    obj,
-    i;
+  var ids = [];
+  var obj, i;
 
   for (i = 0; i < children.length; i++) {
     obj = {};
     obj.element = children[i];
     sort_param = children[i].getAttribute("data-" + sortKey);
-    if(sortKey == "location") {
-      restaurant_coords = sort_param.split(",");
-      if(restaurant_coords.length == 2) {
-        console.log(restaurant_coords); // TODO remove
-        console.log(haversine(current_coords, restaurant_coords)); // TODO remove
+    if (sortKey == "location") {
+      if (sort_param) {
+        restaurant_coords = JSON.parse(sort_param);
+        distance = haversine(current_coords, restaurant_coords, {
+          unit: "mile",
+          format: "[lat,lon]"
+        });
+        obj.key = distance;
       } else {
-        obk.key = "";
+        obj.key = 12450.7305;
       }
     } else {
       obj.key = sort_param;
@@ -36,9 +37,13 @@ function sortRestaurants(sortKey) {
     ids.push(obj);
   }
 
-  console.log(ids); // TODO remove
-
+  // sort descending
   ids.sort((a, b) => (a.key < b.key ? 1 : -1));
+
+  if (sortKey == "location") {
+    // sort ascending
+    ids = ids.reverse();
+  }
 
   for (i = 0; i < ids.length; i++) {
     parent.appendChild(ids[i].element);
@@ -53,8 +58,7 @@ function sortEvent() {
     sortKey = "date";
   }
 
-  if(sortKey == "location") {
-    console.log("Special sorting by location") // TODO remove
+  if (sortKey == "location") {
     navigator.geolocation.getCurrentPosition(position_success, position_error);
   } else {
     sortRestaurants(sortKey);
