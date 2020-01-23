@@ -1,5 +1,6 @@
 {
+    "files": ["assets/javascripts/"],
     "scripts": {
-        "test": "nyc --reporter=lcov yarn run unit"
+        "test": "mocha"
     }
 }
