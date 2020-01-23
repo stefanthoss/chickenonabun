@@ -38,7 +38,6 @@ function sortRestaurants(sortKey) {
   for (i = 0; i < children.length; i++) {
     obj = {};
     obj.element = children[i];
-    console.log(sortingParam);
     var sortingParam = children[i].getAttribute("data-" + sortKey);
     if (sortKey == "location") {
       if (sortingParam) {
@@ -47,7 +46,6 @@ function sortRestaurants(sortKey) {
       } else {
         obj.key = 99999.0;
       }
-      console.log(obj.key);
     } else {
       obj.key = sortingParam;
     }
