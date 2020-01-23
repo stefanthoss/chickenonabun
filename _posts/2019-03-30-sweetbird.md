@@ -1,6 +1,6 @@
 ---
 title: "Sweetbird"
-address: "440 S Anaheim Blvd #107, Anaheim, CA 92805"
+address: "440 S Anaheim Blvd, Anaheim, CA 92805"
 foursquare-link: https://foursquare.com/v/sweetbird/599e1a064a1cc057c00142a9
 rating: 8
 website: https://www.eatsweetbird.com/

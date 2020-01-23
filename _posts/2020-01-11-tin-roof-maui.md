@@ -12,5 +12,5 @@ them. The best thing about this sandwich is that they use dark chicken meat for 
 quite a bit of skin on it and was just extremely juicy - perfect together with that spicy aioli. If you want it even
 spicier, down a shot of the *SLAB Hawaiian Chili Pepper Water* after your sandwich (not for the faint of heart).
 
-On the negative side, this sandwich was served rather cold and didn't have a lot of texture. Neither the bun nor the 
+On the negative side, this sandwich was served rather cold and didn't have a lot of texture. Neither the bun nor the
 chicken skin was very crispy, and everything felt rather mushy from a texture point of view.
