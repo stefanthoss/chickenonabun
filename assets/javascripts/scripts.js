@@ -1,11 +1,30 @@
-var current_coords;
+var currentCoords;
 
-function position_success(position) {
-  current_coords = [position.coords.latitude, position.coords.longitude];
+// Calculates the distance between two `[lat,lng]` tupels in km.
+function calcHaversineDistance(coords1, coords2) {
+  function convertDegToRad(deg) {
+    return (deg * Math.PI / 180.0);
+  }
+
+  var dLat = convertDegToRad(coords2[0] - coords1[0])
+  var dLng = convertDegToRad(coords2[1] - coords1[1])
+  var lat1 = convertDegToRad(coords1[0])
+  var lat2 = convertDegToRad(coords2[0])
+
+  var a = Math.sin(dLat / 2) * Math.sin(dLat / 2) +
+          Math.sin(dLng / 2) * Math.sin(dLng / 2) * Math.cos(lat1) * Math.cos(lat2)
+  var dSigma = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a))
+
+  return (6371 * dSigma);
+}
+
+function positionSuccess(position) {
+  currentCoords = [position.coords.latitude, position.coords.longitude];
+  console.warn("Current position: " + currentCoords);
   sortRestaurants("location");
 }
 
-function position_error(error) {
+function positionError(error) {
   console.warn("Could not get current position (" + error.code + "): " + error.message);
   window.history.back();
 }
@@ -19,30 +38,28 @@ function sortRestaurants(sortKey) {
   for (i = 0; i < children.length; i++) {
     obj = {};
     obj.element = children[i];
-    sort_param = children[i].getAttribute("data-" + sortKey);
+    console.log(sortingParam);
+    var sortingParam = children[i].getAttribute("data-" + sortKey);
     if (sortKey == "location") {
-      if (sort_param) {
-        restaurant_coords = JSON.parse(sort_param);
-        distance = haversine(current_coords, restaurant_coords, {
-          unit: "mile",
-          format: "[lat,lon]"
-        });
-        obj.key = distance;
+      if (sortingParam) {
+        var restaurantCoords = JSON.parse(sortingParam);
+        obj.key = 0.6213712 * calcHaversineDistance(currentCoords, restaurantCoords);
       } else {
-        obj.key = 12450.7305;
+        obj.key = 99999.0;
       }
+      console.log(obj.key);
     } else {
-      obj.key = sort_param;
+      obj.key = sortingParam;
     }
     ids.push(obj);
   }
 
-  // sort descending
-  ids.sort((a, b) => (a.key < b.key ? 1 : -1));
-
   if (sortKey == "location") {
     // sort ascending
-    ids = ids.reverse();
+    ids.sort((a, b) => (a.key < b.key ? -1 : 1));
+  } else {
+    // sort descending
+    ids.sort((a, b) => (a.key < b.key ? 1 : -1));
   }
 
   for (i = 0; i < ids.length; i++) {
@@ -51,24 +68,24 @@ function sortRestaurants(sortKey) {
 }
 
 function sortEvent() {
-  var sortKey;
+  var sortingKey;
   if (location.hash) {
-    sortKey = location.hash.substr(1);
+    sortingKey = location.hash.substr(1);
   } else {
-    sortKey = "date";
+    sortingKey = "date";
   }
 
-  if (sortKey == "location") {
-    navigator.geolocation.getCurrentPosition(position_success, position_error);
+  if (sortingKey == "location") {
+    navigator.geolocation.getCurrentPosition(positionSuccess, positionError);
   } else {
-    sortRestaurants(sortKey);
+    sortRestaurants(sortingKey);
   }
 
   document
     .getElementById("nav-bar")
     .querySelectorAll("a")
     .forEach(a => a.classList.remove("highlight"));
-  document.getElementById(sortKey + "-link").classList.add("highlight");
+  document.getElementById(sortingKey + "-link").classList.add("highlight");
 }
 
 if (window.location.pathname == "/") {
