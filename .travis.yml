@@ -1,9 +1,8 @@
 language: ruby
 cache: bundler
 branches:
-  only:
-  - master
-  - javascript-tests
+  except:
+  - gh-pages
 before_install:
   - gem install bundler
 before_script:
