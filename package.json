@@ -1,5 +1,4 @@
 {
-    "files": ["assets/javascripts/"],
     "scripts": {
         "test": "mocha"
     }
