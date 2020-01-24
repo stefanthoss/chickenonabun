@@ -3,8 +3,9 @@ cache: bundler
 branches:
   except:
   - gh-pages
-before_install:
+install:
   - gem install bundler
+  - npm install mocha
 before_script:
   - yarn global add nyc
   - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
