@@ -1,3 +1,5 @@
+var assert = require("assert");
+
 describe("calcHaversineDistance", function() {
   var coords = [
     [122.5, -30.8],
@@ -5,6 +7,6 @@ describe("calcHaversineDistance", function() {
   ];
 
   it("Calculate no distance", function() {
-    assert.equal(0, calcHaversineDistance(coords[0], coords[1]));
+    assert.equal(calcHaversineDistance(coords[0], coords[1]), 0);
   });
 });
