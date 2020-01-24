@@ -1,5 +1,7 @@
 var assert = require("assert");
 
+require("../assets/javascripts/scripts.js")
+
 describe("calcHaversineDistance", function() {
   var coords = [
     [122.5, -30.8],
