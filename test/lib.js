@@ -1,6 +1,6 @@
-var assert = require("assert");
+const { equal } = require("assert");
 
-require("../assets/javascripts/lib.js")
+const calcHaversineDistance = require("../assets/javascripts/lib.js");
 
 describe("calcHaversineDistance", function() {
   var coords = [
@@ -9,6 +9,6 @@ describe("calcHaversineDistance", function() {
   ];
 
   it("Calculate no distance", function() {
-    assert.equal(calcHaversineDistance(coords[0], coords[1]), 0);
+    equal(calcHaversineDistance(coords[0], coords[1]), 0);
   });
 });

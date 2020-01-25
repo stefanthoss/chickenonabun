@@ -15,3 +15,5 @@ function calcHaversineDistance(coords1, coords2) {
 
   return 6371 * dSigma;
 }
+
+module.exports = calcHaversineDistance;
