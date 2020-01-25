@@ -1,5 +1,5 @@
 {
-    "scripts": {
-        "test": "mocha"
-    }
+  "scripts": {
+    "test": "mocha"
+  }
 }
