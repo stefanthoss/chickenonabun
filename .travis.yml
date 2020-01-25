@@ -3,7 +3,7 @@ cache: bundler
 branches:
   except:
   - gh-pages
-install:
+before_install:
   - gem install bundler
 before_script:
   - npm install mocha
