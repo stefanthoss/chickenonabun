@@ -20,12 +20,13 @@ defaults:
       image: true
 
 plugins_dir: ./_plugins
-jekyll_get:
-  - data: github
-    json: "https://api.github.com/users/stefanthoss/repos"
-    cache: false
 
 plugins:
   - jekyll-last-modified-at
   - jekyll-seo-tag
   - jekyll-sitemap
+
+jekyll_get:
+  - data: github
+    json: "https://api.github.com/users/stefanthoss/repos"
+    cache: false

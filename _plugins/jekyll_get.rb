@@ -2,7 +2,7 @@ require 'json'
 require 'hash-joiner'
 require 'open-uri'
 
-# See https://github.com/18F/jekyll-get
+# Source: https://github.com/18F/jekyll-get
 module Jekyll_Get
   class Generator < Jekyll::Generator
     safe true
