@@ -11,40 +11,45 @@ function positionError(error) {
   window.history.back();
 }
 
-function sortRestaurants(sortKey) {
-  var parent = document.getElementById("restaurant-overview");
-  var children = parent.getElementsByClassName("restaurant");
-  var ids = [];
-  var obj, i;
+function extractSortKey(elements, sortKey) {
+  var result = [];
 
-  for (i = 0; i < children.length; i++) {
-    obj = {};
-    obj.element = children[i];
-    var sortingParam = children[i].getAttribute("data-" + sortKey);
+  for (i = 0; i < elements.length; i++) {
+    var obj = {};
+    obj.element = elements[i];
+    var sortingParam = elements[i].getAttribute("data-" + sortKey);
     if (sortKey == "location") {
       if (sortingParam) {
         var restaurantCoords = JSON.parse(sortingParam);
-        obj.key =
-          0.6213712 * calcHaversineDistance(currentCoords, restaurantCoords);
+        obj.key = 0.6213712 * calcHaversineDistance(currentCoords, restaurantCoords);
       } else {
-        obj.key = 99999.0;
+        obj.key = 99999;
       }
     } else {
       obj.key = sortingParam;
     }
-    ids.push(obj);
+    result.push(obj);
   }
+
+  return result;
+}
+
+function sortRestaurants(sortKey) {
+  var parent = document.getElementById("restaurant-overview");
+  var children = parent.getElementsByClassName("restaurant");
+
+  var elements = extractSortKey(children, sortKey);
 
   if (sortKey == "location") {
     // sort ascending
-    ids.sort((a, b) => (a.key < b.key ? -1 : 1));
+    elements.sort((a, b) => (a.key < b.key ? -1 : 1));
   } else {
     // sort descending
-    ids.sort((a, b) => (a.key < b.key ? 1 : -1));
+    elements.sort((a, b) => (a.key < b.key ? 1 : -1));
   }
 
-  for (i = 0; i < ids.length; i++) {
-    parent.appendChild(ids[i].element);
+  for (i = 0; i < elements.length; i++) {
+    parent.appendChild(elements[i].element);
   }
 }
 
