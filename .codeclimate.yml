@@ -13,3 +13,5 @@ plugins:
     enabled: true
   rubocop:
     enabled: true
+exclude_patterns:
+  - "_plugins/jekyll_get.rb"
