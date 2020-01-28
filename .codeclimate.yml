@@ -9,6 +9,9 @@ plugins:
     channel: "eslint-6"
     config:
       config: .eslintrc
+    checks:
+      complexity:
+        enabled: false
   markdownlint:
     enabled: true
   rubocop:
