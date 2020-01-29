@@ -4,6 +4,8 @@ description: "Chicken On A Bun is a curated guide to the best fried chicken sand
 logo: /assets/icons/chicken.png
 url: https://chickenonabun.com
 
+exclude: ["coverage", "cc-test-reporter"]
+
 defaults:
   - scope:
       path: ""
