@@ -5,5 +5,3 @@ gem 'jekyll'
 gem 'jekyll-last-modified-at'
 gem 'jekyll-seo-tag'
 gem 'jekyll-sitemap'
-
-gem 'rake', group: :test
