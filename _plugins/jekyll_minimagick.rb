@@ -3,7 +3,6 @@ require 'mini_magick'
 # Source: https://github.com/MattKevan/Jekyll-MiniMagick-new
 module Jekyll
   module JekyllMinimagick
-
     class GeneratedImageFile < Jekyll::StaticFile
       # Initialize a new GeneratedImage.
       #   +site+ is the Site
@@ -13,11 +12,15 @@ module Jekyll
       #   +preset+ is the Preset hash from the config.
       #
       # Returns <GeneratedImageFile>
-      def initialize(site, base, dir, name, preset)
+      def initialize(site, base, dir, name, preset, collection = nil)
         @site = site
         @base = base
         @dir  = dir
         @name = name
+        @collection = collection
+        @relative_path = File.join(*[@dir, @name].compact)
+        @extname = File.extname(@name)
+        @data = @site.frontmatter_defaults.all(relative_path, type)
         @dst_dir = preset.delete('destination')
         @src_dir = preset.delete('source')
         @commands = preset
@@ -53,7 +56,6 @@ module Jekyll
 
         true
       end
-
     end
 
     class MiniMagickGenerator < Generator
@@ -67,13 +69,12 @@ module Jekyll
 
         site.config['mini_magick'].each_pair do |name, preset|
           Dir.chdir preset['source'] do
-           Dir.glob(File.join("**", "*.{png,jpg,jpeg,gif}")) do |source|
+            Dir.glob(File.join("**", "*.{png,jpg,jpeg,gif}")) do |source|
               site.static_files << GeneratedImageFile.new(site, site.source, preset['destination'], source, preset.clone)
-             end
+            end
           end
         end
       end
     end
-
   end
 end

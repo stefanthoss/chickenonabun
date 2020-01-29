@@ -25,7 +25,6 @@ plugins_dir: ./_plugins
 
 plugins:
   - jekyll-last-modified-at
-  - jekyll-minimagick
   - jekyll-seo-tag
   - jekyll-sitemap
 
