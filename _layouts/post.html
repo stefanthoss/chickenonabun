@@ -19,5 +19,8 @@ layout: default
   {% if page.image %}<p>
     <img src="{{ page.image }}" alt="{{ page.title }} sandwich" class="sandwich-image" />
   </p>{% endif %}
-  <p>We visited on {{ page.date | date_to_string }}.
+  <p>
+    We visited this restaurant on {{ page.date | date: '%B %d, %Y' }} and updated this
+    review on {{ page.last_modified_at | date: '%B %d, %Y' }}.
+  </p>
 </div>
