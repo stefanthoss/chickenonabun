@@ -76,7 +76,7 @@ DEPENDENCIES
   hash-joiner
   jekyll
   jekyll-last-modified-at
-  jekyll-minimagick
+  jekyll-minimagick (= 0.0.4)
   jekyll-seo-tag
   jekyll-sitemap
 
