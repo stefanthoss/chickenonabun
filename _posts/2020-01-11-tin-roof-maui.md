@@ -2,7 +2,7 @@
 title: "Tin Roof Maui"
 address: "360 Papa Place, Kahului, HI 96732"
 foursquare-link: https://foursquare.com/v/tin-roof-maui/57059230498e1c07f1215878
-image: /assets/images/tin-roof-maui.jpg
+image: /assets/images/medium/tin-roof-maui.jpg
 rating: 6
 website: https://www.tinroofmaui.com
 ---
