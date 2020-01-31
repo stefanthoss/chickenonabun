@@ -2,7 +2,7 @@
 title: "The Crack Shack"
 address: "196 E 17th St, Costa Mesa, CA 92627"
 foursquare-link: https://foursquare.com/v/the-crack-shack/5a137823805e3f277977da7d
-image: /assets/images/the-crack-shack.jpg
+image: /assets/images/medium/the-crack-shack.jpg
 multiple-loc: "Southern California and Las Vegas"
 rating: 10
 side-order: "Fries with all the sauces from the amazing sauce bar"
