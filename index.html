@@ -22,7 +22,7 @@ title: Chicken On A Bun
       post.multiple-loc }}){% endif %}
     </p>
     <p>
-      <a href="{{ post.website }}">Website</a> |
+      <b>Links?</b> {% if post.website %}<a href="{{ post.website }}">Website</a> | {% endif %}
       <a href="{{ post.foursquare-link }}">Foursquare</a>
     </p>
   </div>
