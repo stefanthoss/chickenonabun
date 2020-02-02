@@ -13,7 +13,7 @@ layout: default
       page.multiple-loc }}){% endif %}
   </p>
   <p>
-    <b>Links?</b> <a href="{{ page.website }}">Website</a> |
+    <b>Links?</b> {% if page.website %}<a href="{{ page.website }}">Website</a> | {% endif %}
     <a href="{{ page.foursquare-link }}">Foursquare</a>
   </p>
   {% if page.image %}<p>
