@@ -1,3 +1,12 @@
+.distance-indicator {
+  position: absolute;
+  font-style: italic;
+  right: 0;
+  text-align: right;
+  top: 0;
+  width: 100px;
+}
+
 .header-icon {
   height: 30px;
   vertical-align: middle;
