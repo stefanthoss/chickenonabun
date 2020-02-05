@@ -10,7 +10,7 @@ title: Chicken On A Bun
     data-location="{% geocode_address post.address %}"
     data-rating="{{ post.rating | prepend: '0000' | slice: -4, 4 }}"
   >
-    <div class="distance-indicator">1234.5 miles</div>
+    <div class="distance-indicator"></div>
     <h2><a href="{{ post.url }}">
       {{ post.title }}{% if post.rating %} ({{ post.rating }}/10){% endif %}
     </a></h2>
