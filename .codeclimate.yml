@@ -4,7 +4,10 @@ plugins:
     enabled: true
   csslint:
     enabled: true
-  eslint:
+    checks:
+      box-sizing:
+        enabled: false
+eslint:
     enabled: true
     channel: "eslint-6"
     config:
