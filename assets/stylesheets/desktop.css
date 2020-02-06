@@ -1,4 +1,5 @@
 .distance-indicator {
+  box-sizing: border-box;
   font-style: italic;
   padding: 10px;
   position: absolute;
