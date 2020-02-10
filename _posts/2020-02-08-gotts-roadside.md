@@ -1,6 +1,6 @@
 ---
 title: "Gott's Roadside"
-address: "1 Ferry Building, San Francisco, CA 94111"
+address: "San Francisco Ferry Building, San Francisco, CA 94111"
 foursquare-link: https://foursquare.com/v/gotts-roadside/44d3ade1f964a5204b361fe3
 image: /assets/images/medium/gotts-roadside.jpg
 rating: 7
