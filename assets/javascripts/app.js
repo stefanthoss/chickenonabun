@@ -21,7 +21,9 @@ function extractSortKey(elements, sortKey) {
     if (sortKey == "location") {
       if (sortingParam) {
         var restaurantCoords = JSON.parse(sortingParam);
-        obj.key = 0.6213712 * calcHaversineDistance(currentCoords, restaurantCoords);
+        distance = 0.6213712 * calcHaversineDistance(currentCoords, restaurantCoords);
+        obj.key = distance;
+        obj.element.getElementsByClassName("distance-indicator")[0].innerHTML = Math.round(distance) + " miles away";
       } else {
         obj.key = 99999;
       }
