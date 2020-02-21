@@ -7,7 +7,7 @@ plugins:
     checks:
       box-sizing:
         enabled: false
-eslint:
+  eslint:
     enabled: true
     channel: "eslint-6"
     config:
