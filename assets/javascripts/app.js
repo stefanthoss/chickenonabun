@@ -23,7 +23,7 @@ function extractSortKey(elements, sortKey) {
         var restaurantCoords = JSON.parse(sortingParam);
         distance = 0.6213712 * calcHaversineDistance(currentCoords, restaurantCoords);
         obj.key = distance;
-        obj.element.getElementsByClassName("distance-indicator")[0].innerHTML = `${Math.round(distance)} miles away`;
+        obj.element.getElementsByClassName("distance-indicator")[0].innerHTML = Math.round(distance) + " miles away";
       } else {
         obj.key = 99999;
       }
