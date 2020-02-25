@@ -1,3 +1,0 @@
-brakeman:
-  enabled: false
-dependency_source: gemfile_lock_file
