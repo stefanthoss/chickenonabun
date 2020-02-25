@@ -10,6 +10,7 @@ title: Chicken On A Bun
     data-location="{% geocode_address post.address %}"
     data-rating="{{ post.rating | prepend: '0000' | slice: -4, 4 }}"
   >
+    <div class="distance-indicator"></div>
     <h2><a href="{{ post.url }}">
       {{ post.title }}{% if post.rating %} ({{ post.rating }}/10){% endif %}
     </a></h2>
@@ -22,7 +23,7 @@ title: Chicken On A Bun
       post.multiple-loc }}){% endif %}
     </p>
     <p>
-      <a href="{{ post.website }}">Website</a> |
+      <b>Links?</b> {% if post.website %}<a href="{{ post.website }}">Website</a> | {% endif %}
       <a href="{{ post.foursquare-link }}">Foursquare</a>
     </p>
   </div>

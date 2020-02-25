@@ -4,6 +4,11 @@ description: "Chicken On A Bun is a curated guide to the best fried chicken sand
 logo: /assets/icons/chicken.png
 url: https://chickenonabun.com
 
+exclude:
+  - "assets/images/original"
+  - "cc-test-reporter"
+  - "coverage"
+
 defaults:
   - scope:
       path: ""
@@ -20,12 +25,19 @@ defaults:
       image: true
 
 plugins_dir: ./_plugins
-jekyll_get:
-  - data: github
-    json: "https://api.github.com/users/stefanthoss/repos"
-    cache: false
 
 plugins:
   - jekyll-last-modified-at
   - jekyll-seo-tag
   - jekyll-sitemap
+
+jekyll_get:
+  - data: github
+    json: "https://api.github.com/users/stefanthoss/repos"
+    cache: false
+
+mini_magick:
+  medium:
+    source: assets/images/original
+    destination: assets/images/medium
+    resize: "600x600"

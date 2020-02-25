@@ -4,13 +4,22 @@ plugins:
     enabled: true
   csslint:
     enabled: true
+    checks:
+      box-sizing:
+        enabled: false
   eslint:
     enabled: true
     channel: eslint-6
     config:
       config: .eslintrc
+    checks:
+      complexity:
+        enabled: false
   markdownlint:
     enabled: true
   rubocop:
     enabled: true
     channel: rubocop-0-79
+exclude_patterns:
+  - "_plugins/jekyll_get.rb"
+  - "_plugins/jekyll_minimagick.rb"

@@ -1,3 +1,14 @@
+.distance-indicator {
+  box-sizing: border-box;
+  font-style: italic;
+  padding: 10px;
+  position: absolute;
+  right: 0;
+  text-align: right;
+  top: 0;
+  width: 200px;
+}
+
 .header-icon {
   height: 30px;
   vertical-align: middle;
@@ -11,6 +22,7 @@
   background-color: #ffffee;
   margin-bottom: 20px;
   padding: 10px 15px 10px 15px;
+  position: relative;
 }
 
 .sandwich-image {
