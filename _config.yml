@@ -8,6 +8,7 @@ exclude:
   - "assets/images/original"
   - "cc-test-reporter"
   - "coverage"
+  - "test"
 
 defaults:
   - scope:
@@ -30,11 +31,6 @@ plugins:
   - jekyll-last-modified-at
   - jekyll-seo-tag
   - jekyll-sitemap
-
-jekyll_get:
-  - data: github
-    json: "https://api.github.com/users/stefanthoss/repos"
-    cache: false
 
 mini_magick:
   medium:

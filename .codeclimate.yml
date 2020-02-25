@@ -21,5 +21,4 @@ plugins:
     enabled: true
     channel: rubocop-0-79
 exclude_patterns:
-  - "_plugins/jekyll_get.rb"
   - "_plugins/jekyll_minimagick.rb"
