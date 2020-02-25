@@ -8,6 +8,7 @@ exclude:
   - "assets/images/original"
   - "cc-test-reporter"
   - "coverage"
+  - "test"
 
 defaults:
   - scope:
