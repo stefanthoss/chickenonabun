@@ -20,5 +20,4 @@ plugins:
   rubocop:
     enabled: true
 exclude_patterns:
-  - "_plugins/jekyll_get.rb"
   - "_plugins/jekyll_minimagick.rb"
