@@ -9,7 +9,7 @@ class GeocodeAddressTag < Liquid::Tag
   def render(context)
     url = 'https://nominatim.openstreetmap.org/search?format=json&limit=1'\
           "&q=#{CGI.escape(context[@content])}"
-    results = JSON.parse(open(url).read)
+    results = JSON.parse(URI.parse(url).open)
     "[#{results.first['lat']},#{results.first['lon']}]" if results.any?
   end
 
