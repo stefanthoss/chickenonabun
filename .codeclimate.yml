@@ -6,10 +6,11 @@ plugins:
     enabled: true
   eslint:
     enabled: true
-    channel: "eslint-6"
+    channel: eslint-6
     config:
       config: .eslintrc
   markdownlint:
     enabled: true
   rubocop:
     enabled: true
+    channel: rubocop-0-79
