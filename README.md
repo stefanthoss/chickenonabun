@@ -17,3 +17,5 @@ jekyll server -w --drafts
 ## Credits
 
 The chicken icon is from [openmoji.org](https://openmoji.org) and processed using [realfavicongenerator.net](https://realfavicongenerator.net).
+
+The social share buttons are made with [Simple Sharing Buttons Generator](https://simplesharingbuttons.com).

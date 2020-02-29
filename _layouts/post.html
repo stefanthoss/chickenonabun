@@ -20,7 +20,12 @@ layout: default
     <img src="{{ page.image }}" alt="{{ page.title }} sandwich" class="sandwich-image" />
   </p>{% endif %}
   <p>
-    We visited this restaurant on {{ page.date | date: '%B %d, %Y' }} and updated this
-    review on {{ page.last_modified_at | date: '%B %d, %Y' }}.
+    <ul class="share-buttons">
+      <li><a href="https://www.facebook.com/sharer/sharer.php?u={{ page.url | absolute_url | uri_escape }}&quote={{ page.title | prepend: "Check out Chicken On A Bun's review of " | uri_escape }}" title="Share on Facebook" target="_blank"><img alt="Share on Facebook" src="/assets/images/social_flat_rounded_rects_svg/Facebook.svg" /></a></li>
+      <li><a href="https://twitter.com/intent/tweet?source={{ page.url | absolute_url | uri_escape }}&text={{ page.title | prepend: "Check out Chicken On A Bun's review of " | uri_escape }}:%20{{ page.url | absolute_url | uri_escape }}" target="_blank" title="Tweet"><img alt="Tweet" src="/assets/images/social_flat_rounded_rects_svg/Twitter.svg" /></a></li>
+      <li><a href="http://pinterest.com/pin/create/button/?url={{ page.url | absolute_url | uri_escape }}&media={{ page.image | prepend: site.url | uri_escape }}" target="_blank" title="Pin it"><img alt="Pin it" src="/assets/images/social_flat_rounded_rects_svg/Pinterest.svg" /></a></li>
+      <li><a href="http://www.reddit.com/submit?url={{ page.url | absolute_url | uri_escape }}&title={{ page.title | prepend: "Check out Chicken On A Bun's review of " | uri_escape }}" target="_blank" title="Submit to Reddit"><img alt="Submit to Reddit" src="/assets/images/social_flat_rounded_rects_svg/Reddit.svg" /></a></li>
+      <li><a href="mailto:?subject={{ page.title | prepend: "Check out Chicken On A Bun's review of " | uri_escape }}&body={{ page.url | absolute_url | uri_escape }}" target="_blank" title="Send email"><img alt="Send email" src="/assets/images/social_flat_rounded_rects_svg/Email.svg" /></a></li>
+    </ul>
   </p>
 </div>
