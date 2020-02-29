@@ -28,6 +28,7 @@ defaults:
 plugins_dir: ./_plugins
 
 plugins:
+  - jekyll-feed
   - jekyll-last-modified-at
   - jekyll-seo-tag
   - jekyll-sitemap
