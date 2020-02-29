@@ -5,6 +5,7 @@ logo: /assets/icons/chicken.png
 url: https://chickenonabun.com
 
 exclude:
+  - ".travis"
   - "assets/images/original"
   - "cc-test-reporter"
   - "coverage"
