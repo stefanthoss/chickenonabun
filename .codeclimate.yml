@@ -22,3 +22,4 @@ plugins:
     channel: rubocop-0-79
 exclude_patterns:
   - "_plugins/jekyll_minimagick.rb"
+  - "LICENSE.md"
