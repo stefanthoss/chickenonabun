@@ -10,7 +10,7 @@ website: https://www.crackshack.com
 ---
 
 This restaurant has it all - a casual space to sit, friendly employees, cornhole, a good draft beer selection, and of
-course amazing fried chicken. The *Firebird* (see picture) has the right level of spicyness, fried onions, and ranch
+course amazing fried chicken. The *Firebird* (see picture) has the right level of spiciness, fried onions, and ranch
 dressing on top of perfect juicy chicken.
 
 But it doesn't stop there, you can also order the *Hangover* which is served on the perfect soft biscuit with a fried
