@@ -25,4 +25,6 @@ jekyll server -w --drafts
 ![CC BY-SA 4.0](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)
 ![GNU GPLv3](https://www.gnu.org/graphics/gplv3-88x31.png)
 
-The content of this project itself is licensed under the [Creative Commons Attribution-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-sa/4.0/), and the underlying source code used to format and display that content is licensed under the [GNU General Public License v3.0](LICENSE.md).
+The content of this project itself is licensed under the [Creative Commons Attribution-ShareAlike 4.0 International
+License](https://creativecommons.org/licenses/by-sa/4.0/), and the underlying source code used to format and display
+that content is licensed under the [GNU General Public License v3.0](LICENSE.md).

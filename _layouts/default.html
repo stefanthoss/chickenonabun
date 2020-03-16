@@ -4,11 +4,11 @@
     <meta charset="utf-8" />
     <title>{% if page.title == site.title %}Fried Chicken Sandwich Reviews{% else %}{{ page.title }}{% endif %} | {{ site.title }}</title>
     <meta name="viewport" content="width=device-width" />
-    <meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self'; script-src 'self'; style-src 'self'" />
+    <meta http-equiv="Content-Security-Policy" content="base-uri 'none'; default-src 'none'; form-action 'none'; frame-ancestors 'none'; img-src 'self'; script-src 'self'; style-src 'self';" />
     <link rel="stylesheet" type="text/css" href="/assets/stylesheets/desktop.css" />
     <link rel="stylesheet" type="text/css" media="only screen and (max-width: 600px)" href="/assets/stylesheets/mobile.css" />
-    <script type="text/javascript" src="/assets/javascripts/app.js"></script>
-    <script type="text/javascript" src="/assets/javascripts/lib.js"></script>
+    <script src="/assets/javascripts/app.js"></script>
+    <script src="/assets/javascripts/lib.js"></script>
     {% seo title=false %}
     {% include favicons.html %}
   </head>
