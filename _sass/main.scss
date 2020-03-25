@@ -1,5 +1,9 @@
 $layout-breakpoint: 850px;
 
+$background-color: #feb;
+$box-color: #ffe;
+$text-color: #444;
+
 .distance-indicator {
   box-sizing: border-box;
   font-style: italic;
@@ -21,7 +25,7 @@ $layout-breakpoint: 850px;
 }
 
 .restaurant {
-  background-color: #ffffee;
+  background-color: $box-color;
   margin-bottom: 20px;
   padding: 20px;
   position: relative;
@@ -34,11 +38,11 @@ $layout-breakpoint: 850px;
 }
 
 body {
-  background-color: #ffeebb;
-  color: #444444;
+  background-color: $background-color;
+  color: $text-color;
   font-family: "Courier New", Courier, monospace;
   margin: 10px auto;
-  padding: 0 20px 0 20px;
+  padding: 0 20px;
   width: auto;
 }
 
@@ -48,11 +52,11 @@ h1 {
 
 h2 {
   margin-top: 0;
-}
 
-h2 a {
-  color: #444444;
-  text-decoration: none;
+  a {
+    color: $text-color;
+    text-decoration: none;
+  }
 }
 
 nav {
@@ -60,22 +64,22 @@ nav {
 }
 
 p {
-  margin: 5px 0 10px 0;
+  margin: 10px 0;
 }
 
-ul.share-buttons {
+.share-buttons {
   list-style: none;
   margin-bottom: 0;
   padding: 0;
   text-align: center;
-}
 
-ul.share-buttons li {
-  display: inline;
-}
+  img {
+    width: 32px;
+  }
 
-ul.share-buttons img {
-  width: 32px;
+  li {
+    display: inline;
+  }
 }
 
 @media screen and (min-width: $layout-breakpoint) {
@@ -83,15 +87,20 @@ ul.share-buttons img {
   .header-icon {
     height: 60px;
   }
+
   body {
     margin: 60px auto;
     padding: 0;
     width: $layout-breakpoint;
   }
+
   h1 {
     font-size: 60px;
   }
-  ul.share-buttons img {
-    width: 40px;
+
+  .share-buttons {
+    img {
+      width: 40px;
+    }
   }
 }
