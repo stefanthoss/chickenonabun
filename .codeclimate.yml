@@ -2,11 +2,8 @@ version: "2"
 plugins:
   bundler-audit:
     enabled: true
-  csslint:
+  scss-lint:
     enabled: true
-    checks:
-      box-sizing:
-        enabled: false
   eslint:
     enabled: true
     channel: eslint-6
