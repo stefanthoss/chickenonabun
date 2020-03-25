@@ -1,3 +1,5 @@
+$layout-breakpoint: 850px;
+
 .distance-indicator {
   box-sizing: border-box;
   font-style: italic;
@@ -21,7 +23,7 @@
 .restaurant {
   background-color: #ffffee;
   margin-bottom: 20px;
-  padding: 10px 15px 10px 15px;
+  padding: 20px;
   position: relative;
 }
 
@@ -44,6 +46,10 @@ h1 {
   font-size: 30px;
 }
 
+h2 {
+  margin-top: 0;
+}
+
 h2 a {
   color: #444444;
   text-decoration: none;
@@ -59,6 +65,7 @@ p {
 
 ul.share-buttons {
   list-style: none;
+  margin-bottom: 0;
   padding: 0;
   text-align: center;
 }
@@ -69,4 +76,22 @@ ul.share-buttons li {
 
 ul.share-buttons img {
   width: 32px;
+}
+
+@media screen and (min-width: $layout-breakpoint) {
+  // Desktop stylesheet
+  .header-icon {
+    height: 60px;
+  }
+  body {
+    margin: 60px auto;
+    padding: 0;
+    width: $layout-breakpoint;
+  }
+  h1 {
+    font-size: 60px;
+  }
+  ul.share-buttons img {
+    width: 40px;
+  }
 }
