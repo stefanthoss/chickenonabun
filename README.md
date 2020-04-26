@@ -6,6 +6,14 @@
 [![W3C Validation](https://img.shields.io/w3c-validation/html?targetUrl=https%3A%2F%2Fchickenonabun.com)](https://validator.nu/?doc=https%3A%2F%2Fchickenonabun.com)
 [![Mozilla HTTP Observatory Grade](https://img.shields.io/mozilla-observatory/grade/chickenonabun.com?publish)](https://observatory.mozilla.org/analyze/chickenonabun.com)
 
+## Adding New Content
+
+Strip new images of EXIF information with:
+
+```shell
+mogrify -strip assets/images/original/image.jpg
+```
+
 ## Local Testing
 
 Test the site locally with drafts:
