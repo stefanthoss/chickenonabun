@@ -5,24 +5,14 @@ $light-accent-color: #d4c688;
 $light-text-color: #999;
 $text-color: #444;
 
-* {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-#layout {
-  padding: 0;
-}
-
-#sort-label {
-  text-transform: uppercase;
-  color: $light-text-color;
+.content-subhead {
   border-bottom: 1px solid $light-text-color;
-  padding: 0.4em 0;
+  color: $light-text-color;
   font-size: 80%;
   font-weight: 500;
-  letter-spacing: 0.1em;
+  letter-spacing: .1em;
+  padding: .4em 0;
+  text-transform: uppercase;
 }
 
 a {
@@ -45,9 +35,9 @@ body {
 }
 
 .header {
+  margin: 2em auto;
   text-align: center;
   top: auto;
-  margin: 2em auto;
 }
 
 .sidebar {
@@ -84,24 +74,23 @@ body {
 }
 
 .nav-list {
+  list-style: none;
   margin: 0;
   padding: 0;
-  list-style: none;
 }
 
 .nav-item {
   display: inline-block;
-  *display: inline;
 }
 
 .nav-item a {
   background: transparent;
   border: 2px solid $light-accent-color;
   color: $background-color;
-  margin-top: 1em;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
   font-size: 85%;
+  letter-spacing: .05em;
+  margin-top: 1em;
+  text-transform: uppercase;
 }
 
 .nav-item a:hover,
@@ -119,9 +108,9 @@ body {
 }
 
 .post-title {
-  font-size: 2em;
   color: $dark-accent-color;
-  margin-bottom: 0.2em;
+  font-size: 2em;
+  margin-bottom: .2em;
 }
 
 .post-description {
@@ -136,22 +125,22 @@ body {
 }
 
 .pure-img-responsive {
-  max-width: 100%;
   height: auto;
+  max-width: 100%;
 }
 
 @media (min-width: 48em) {
   .coab-logo {
+    display: block;
     height: 100px;
-    width: 100px;
     margin-left: auto;
     margin-right: auto;
-    display: block;
+    width: 100px;
   }
 
   .content {
-    padding: 2em 3em 0;
     margin-left: 25%;
+    padding: 2em 3em 0;
   }
 
   .header {
@@ -160,9 +149,9 @@ body {
   }
 
   .sidebar {
+    bottom: 0;
     position: fixed;
     top: 0;
-    bottom: 0;
   }
 
   .footer {
