@@ -1,77 +1,39 @@
-$layout-breakpoint: 850px;
-
 $background-color: #feb;
 $box-color: #ffe;
 $text-color: #444;
 
-.distance-indicator {
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
-  font-style: italic;
-  padding: 10px;
-  position: absolute;
-  right: 0;
-  text-align: right;
-  top: 0;
-  width: 200px;
 }
 
-.header-icon {
-  height: 30px;
+a {
+  text-decoration: none;
+}
+a:hover,
+a:focus {
+  text-decoration: underline;
+}
+
+h3 {
+  font-weight: 100;
+}
+
+.coab-logo {
+  height: 50px;
   vertical-align: middle;
 }
 
-.highlight {
-  font-weight: bold;
-}
-
-.restaurant {
-  background-color: $box-color;
-  margin-bottom: 20px;
-  padding: 20px;
-  position: relative;
-}
-
-.sandwich-image {
-  display: block;
-  margin: 20px auto;
-  max-width: 100%;
-}
-
-body {
-  background-color: $background-color;
-  color: $text-color;
-  font-family: "Courier New", Courier, monospace;
-  margin: 10px auto;
-  padding: 0 20px;
-  width: auto;
-}
-
-h1 {
-  font-size: 30px;
-}
-
-h2 {
-  margin-top: 0;
-
-  a {
-    color: $text-color;
-    text-decoration: none;
-  }
-}
-
-nav {
-  margin-bottom: 20px;
-}
-
-p {
-  margin: 10px 0;
+.distance-indicator {
+  float: right;
+  margin-left: 1em;
 }
 
 .share-buttons {
   list-style: none;
   margin-bottom: 0;
   padding: 0;
-  text-align: center;
 
   img {
     width: 32px;
@@ -82,25 +44,103 @@ p {
   }
 }
 
-@media screen and (min-width: $layout-breakpoint) {
-  // Desktop stylesheet
-  .header-icon {
-    height: 60px;
+.pure-img-responsive {
+  max-width: 100%;
+  height: auto;
+}
+
+#layout {
+  padding: 0;
+}
+
+.header {
+  text-align: center;
+  top: auto;
+  margin: 3em auto;
+}
+
+.sidebar {
+  background: rgb(61, 79, 93);
+  color: #fff;
+}
+
+.brand-title {
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.nav-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav-item {
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+}
+
+.nav-item a {
+  background: transparent;
+  border: 2px solid rgb(176, 202, 219);
+  color: #fff;
+  margin-top: 1em;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  font-size: 85%;
+}
+
+.nav-item a:hover,
+.nav-item a:focus {
+  border: 2px solid rgb(61, 146, 201);
+  text-decoration: none;
+}
+
+.content {
+  padding: 2em 1em 0;
+}
+
+.post {
+  padding-bottom: 2em;
+}
+
+.post-title {
+  font-size: 2em;
+  color: #222;
+  margin-bottom: 0.2em;
+}
+
+.post-description {
+  font-family: Georgia, "Cambria", serif;
+  color: #444;
+  line-height: 1.8em;
+}
+
+.post-meta {
+  color: #999;
+  font-size: 90%;
+  margin: 0;
+}
+
+@media (min-width: 48em) {
+  .content {
+    padding: 2em 3em 0;
+    margin-left: 25%;
   }
 
-  body {
-    margin: 60px auto;
-    padding: 0;
-    width: $layout-breakpoint;
+  .header {
+    margin: 80% 2em 0;
+    text-align: right;
   }
 
-  h1 {
-    font-size: 60px;
+  .sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
   }
 
-  .share-buttons {
-    img {
-      width: 40px;
-    }
+  .footer {
+    text-align: center;
   }
 }

@@ -3,17 +3,29 @@
   <head>
     <meta charset="utf-8" />
     <title>{% if page.title == site.title %}Fried Chicken Sandwich Reviews{% else %}{{ page.title }}{% endif %} | {{ site.title }}</title>
-    <meta name="viewport" content="width=device-width" />
-    <meta http-equiv="Content-Security-Policy" content="base-uri 'none'; default-src 'none'; form-action 'none'; frame-ancestors 'none'; img-src 'self'; script-src 'self'; style-src 'self';" />
-    <link rel="stylesheet" type="text/css" href="/assets/css/styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="Content-Security-Policy" content="base-uri 'none'; default-src 'none'; form-action 'none'; frame-ancestors 'none'; img-src 'self'; script-src 'self' cdnjs.cloudflare.com; style-src 'self' cdnjs.cloudflare.com;" />
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.1/pure-min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.1/grids-responsive-min.css" />
     <script src="/assets/javascripts/app.js"></script>
     <script src="/assets/javascripts/lib.js"></script>
     {% seo title=false %}
     {% include favicons.html %}
   </head>
   <body>
-    <h1><img src="/assets/icons/chicken.png" alt="Chicken icon" class="header-icon" />{{ page.title }}</h1>
-    {% include navigation.html %}
-    {{ content }}
+    <div id="layout" class="pure-g">
+      <div class="sidebar pure-u-1 pure-u-md-1-4">
+        <div class="header">
+          <img src="/assets/icons/chicken.png" alt="Chicken icon" class="coab-logo" />
+          <h1 class="brand-title">{{ site.title }}</h1>
+          {% include navigation.html %}
+        </div>
+      </div>
+
+      <div class="content pure-u-1 pure-u-md-3-4">
+        {{ content }}
+      </div>
+    </div>
   </body>
 </html>

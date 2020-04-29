@@ -2,30 +2,30 @@
 title: Chicken On A Bun
 ---
 
-<div id="restaurant-overview">
+<div id="restaurant-overview" class="posts">
   {% for post in site.posts %}
-  <div
-    class="restaurant"
-    data-date="{{ post.date }}"
-    data-location="{% geocode_address post.address %}"
-    data-rating="{{ post.rating | prepend: '0000' | slice: -4, 4 }}"
-  >
-    <div class="distance-indicator"></div>
-    <h2><a href="{{ post.url }}">
-      {{ post.title }}{% if post.rating %} ({{ post.rating }}/10){% endif %}
-    </a></h2>
-    {{ post.content }}
-    {% if post.side-order %}
-    <p><b>What to order on the side?</b> {{ post.side-order }}</p>
-    {% endif %}
-    <p>
-      <b>Where?</b> {{ post.address }}{% if post.multiple-loc %} (multiple locations in {{
-      post.multiple-loc }}){% endif %}
-    </p>
-    <p>
-      <b>Links?</b> {% if post.website %}<a href="{{ post.website }}">Website</a> | {% endif %}
-      <a href="{{ post.foursquare-link }}">Foursquare</a>
-    </p>
-  </div>
+  <section class="post restaurant" data-date="{{ post.date }}" data-location="{% geocode_address post.address %}" data-rating="{{ post.rating | prepend: '0000' | slice: -4, 4 }}">
+    <header class="post-header">
+      <p class="distance-indicator"></p>
+
+      <h2 class="post-title">
+        <a href="{{ post.url }}">{{ post.title }}{% if post.rating %} ({{ post.rating }}/10){% endif %}</a>
+      </h2>
+
+      <p class="post-meta">
+        {% if post.side-order %}<p><b>What to order on the side?</b> {{ post.side-order }}</p>{% endif %}
+        <p>
+          <b>Where?</b> {{ post.address }}{% if post.multiple-loc %} (multiple locations in {{ post.multiple-loc }}){% endif %}
+        </p>
+        <p>
+          <b>Links?</b> {% if post.website %}<a href="{{ post.website }}">Website</a> | {% endif %}<a href="{{ post.foursquare-link }}">Foursquare</a>
+        </p>
+      </p>
+    </header>
+
+    <div class="post-description">
+        {{ post.content }}
+    </div>
+  </section>
   {% endfor %}
 </div>
