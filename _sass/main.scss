@@ -1,4 +1,4 @@
-$background-color: #feb;
+$background-color: #fff;
 $box-color: #c66c33;
 $dark-accent-color: #4d486d;
 $light-accent-color: #d4c688;
@@ -47,7 +47,7 @@ body {
 .header {
   text-align: center;
   top: auto;
-  margin: 3em auto;
+  margin: 2em auto;
 }
 
 .sidebar {
@@ -56,8 +56,8 @@ body {
 }
 
 .coab-logo {
-  height: 50px;
-  vertical-align: middle;
+  height: 1.2em;
+  vertical-align: text-bottom;
 }
 
 .distance-indicator {
@@ -141,14 +141,22 @@ body {
 }
 
 @media (min-width: 48em) {
+  .coab-logo {
+    height: 100px;
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+
   .content {
     padding: 2em 3em 0;
     margin-left: 25%;
   }
 
   .header {
-    margin: 80% 2em 0;
-    text-align: right;
+    margin: 75% 2em 0;
+    text-align: center;
   }
 
   .sidebar {
