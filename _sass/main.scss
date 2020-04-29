@@ -1,5 +1,8 @@
 $background-color: #feb;
-$box-color: #ffe;
+$box-color: #c66c33;
+$dark-accent-color: #4d486d;
+$light-accent-color: #d4c688;
+$light-text-color: #999;
 $text-color: #444;
 
 * {
@@ -8,16 +11,48 @@ $text-color: #444;
   box-sizing: border-box;
 }
 
+#layout {
+  padding: 0;
+}
+
+#sort-label {
+  text-transform: uppercase;
+  color: $light-text-color;
+  border-bottom: 1px solid $light-text-color;
+  padding: 0.4em 0;
+  font-size: 80%;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+}
+
 a {
+  color: $dark-accent-color;
   text-decoration: none;
 }
+
 a:hover,
 a:focus {
   text-decoration: underline;
 }
 
-h3 {
-  font-weight: 100;
+body {
+  background-color: $background-color;
+}
+
+.brand-title {
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.header {
+  text-align: center;
+  top: auto;
+  margin: 3em auto;
+}
+
+.sidebar {
+  background: $box-color;
+  color: $background-color;
 }
 
 .coab-logo {
@@ -28,6 +63,10 @@ h3 {
 .distance-indicator {
   float: right;
   margin-left: 1em;
+}
+
+.l-box {
+  padding-right: 2em;
 }
 
 .share-buttons {
@@ -44,31 +83,6 @@ h3 {
   }
 }
 
-.pure-img-responsive {
-  max-width: 100%;
-  height: auto;
-}
-
-#layout {
-  padding: 0;
-}
-
-.header {
-  text-align: center;
-  top: auto;
-  margin: 3em auto;
-}
-
-.sidebar {
-  background: rgb(61, 79, 93);
-  color: #fff;
-}
-
-.brand-title {
-  margin: 0;
-  text-transform: uppercase;
-}
-
 .nav-list {
   margin: 0;
   padding: 0;
@@ -78,13 +92,12 @@ h3 {
 .nav-item {
   display: inline-block;
   *display: inline;
-  zoom: 1;
 }
 
 .nav-item a {
   background: transparent;
-  border: 2px solid rgb(176, 202, 219);
-  color: #fff;
+  border: 2px solid $light-accent-color;
+  color: $background-color;
   margin-top: 1em;
   letter-spacing: 0.05em;
   text-transform: uppercase;
@@ -93,7 +106,7 @@ h3 {
 
 .nav-item a:hover,
 .nav-item a:focus {
-  border: 2px solid rgb(61, 146, 201);
+  border: 2px solid $dark-accent-color;
   text-decoration: none;
 }
 
@@ -107,20 +120,24 @@ h3 {
 
 .post-title {
   font-size: 2em;
-  color: #222;
+  color: $dark-accent-color;
   margin-bottom: 0.2em;
 }
 
 .post-description {
-  font-family: Georgia, "Cambria", serif;
-  color: #444;
+  color: $text-color;
   line-height: 1.8em;
 }
 
 .post-meta {
-  color: #999;
+  color: $light-text-color;
   font-size: 90%;
   margin: 0;
+}
+
+.pure-img-responsive {
+  max-width: 100%;
+  height: auto;
 }
 
 @media (min-width: 48em) {

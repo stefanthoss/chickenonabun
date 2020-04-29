@@ -7,24 +7,27 @@ layout: default
     <header class="post-header">
       <h2 class="post-title">{{ page.title }}</h2>
 
-      <div class="post-meta">
+      <p class="post-meta">
         <p><b>Rating?</b> {{ page.rating }}/10</p>
         {% if page.side-order %}<p><b>What to order on the side?</b> {{ page.side-order }}</p>{% endif %}
         <p>
           <b>Where?</b> {{ page.address }}{% if page.multiple-loc %} (multiple locations in {{ page.multiple-loc }}){% endif %}
         </p>
         <p>
-          <b>Links?</b> {% if page.website %}<a href="{{ page.website }}">Website</a> | {% endif %}<a href="{{ page.foursquare-link }}">Foursquare</a>
+          <b>Links?</b> {% if page.website %}<a href="{{ page.website }}" target="_blank">Website</a> | {% endif %}<a href="{{ page.foursquare-link }}" target="_blank">Foursquare</a>
         </p>
-      </div>
+      </p>
     </header>
 
     <div class="pure-g post-description">
       <div class="pure-u-1 pure-u-md-1-2">
-        {{ content }}
+        <div class="l-box">
+          {{ content }}
+        </div>
       </div>
+
       <div class="pure-u-1 pure-u-md-1-2">
-        <img class="pure-img-responsive" src="{{ page.image }}" alt="{{ page.title }} sandwich" />
+        {% if page.image %}<img class="pure-img-responsive" src="{{ page.image }}" alt="{{ page.title }} sandwich" />{% endif %}
       </div>
     </div>
 
