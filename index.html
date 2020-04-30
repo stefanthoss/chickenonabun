@@ -15,7 +15,7 @@ title: Chicken On A Bun
           <a href="{{ post.url }}">{{ post.title }}{% if post.rating %} ({{ post.rating }}/10){% endif %}</a>
         </h2>
 
-        <p class="post-meta">
+        <div class="post-meta">
           {% if post.side-order %}<p><b>What to order on the side?</b> {{ post.side-order }}</p>{% endif %}
           <p>
             <b>Where?</b> {{ post.address }}{% if post.multiple-loc %} (multiple locations in {{ post.multiple-loc }}){% endif %}
@@ -23,7 +23,7 @@ title: Chicken On A Bun
           <p>
             <b>Links?</b> {% if post.website %}<a href="{{ post.website }}" target="_blank" rel="noopener">Website</a> | {% endif %}<a href="{{ post.foursquare-link }}" target="_blank" rel="noopener">Foursquare</a>
           </p>
-        </p>
+        </div>
       </header>
 
       <div class="post-description">
