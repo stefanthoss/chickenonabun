@@ -1,5 +1,11 @@
 var currentCoords;
 
+var sortLabels = {
+  date: "Latest sandwich reviews",
+  rating: "Best sandwiches",
+  location: "Nearby sandwiches",
+};
+
 function positionSuccess(position) {
   currentCoords = [position.coords.latitude, position.coords.longitude];
   console.warn("Current position: " + currentCoords);
@@ -37,8 +43,8 @@ function extractSortKey(elements, sortKey) {
 }
 
 function sortRestaurants(sortKey) {
-  var parent = document.getElementById("restaurant-overview");
-  var children = parent.getElementsByClassName("restaurant");
+  var parent = document.getElementById("restaurant-list");
+  var children = parent.getElementsByClassName("post");
 
   var elements = extractSortKey(children, sortKey);
 
@@ -69,11 +75,7 @@ function sortEvent() {
     sortRestaurants(sortingKey);
   }
 
-  document
-    .getElementById("nav-bar")
-    .querySelectorAll("a")
-    .forEach(a => a.classList.remove("highlight"));
-  document.getElementById(sortingKey + "-link").classList.add("highlight");
+  document.getElementById("sort-label").innerHTML = sortLabels[sortingKey];
 }
 
 if (window.location.pathname == "/") {

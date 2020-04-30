@@ -2,28 +2,45 @@
 layout: default
 ---
 
-<div class="restaurant">
-  {{ content }}
-  {% if page.rating %}<p><b>Rating?</b> {{ page.rating }}/10</p>{% endif %}
-  {% if page.side-order %}
-  <p><b>What to order on the side?</b> {{ page.side-order }}</p>
-  {% endif %}
-  <p>
-    <b>Where?</b> {{ page.address }}{% if page.multiple-loc %} (multiple locations in {{
-      page.multiple-loc }}){% endif %}
-  </p>
-  <p>
-    <b>Links?</b> {% if page.website %}<a href="{{ page.website }}">Website</a> | {% endif %}
-    <a href="{{ page.foursquare-link }}">Foursquare</a>
-  </p>
-  {% if page.image %}<p>
-    <img src="{{ page.image }}" alt="{{ page.title }} sandwich" class="sandwich-image" />
-  </p>{% endif %}
-  <ul class="share-buttons">
-    <li><a href="https://www.facebook.com/sharer/sharer.php?u={{ page.url | absolute_url | uri_escape }}&quote={{ page.title | prepend: "Check out Chicken On A Bun's review of " | uri_escape }}" title="Share on Facebook" target="_blank"><img alt="Share on Facebook" src="/assets/images/social_flat_rounded_rects_svg/Facebook.svg" /></a></li>
-    <li><a href="https://twitter.com/intent/tweet?source={{ page.url | absolute_url | uri_escape }}&text={{ page.title | prepend: "Check out Chicken On A Bun's review of " | uri_escape }}:%20{{ page.url | absolute_url | uri_escape }}" target="_blank" title="Tweet"><img alt="Tweet" src="/assets/images/social_flat_rounded_rects_svg/Twitter.svg" /></a></li>
-    <li><a href="http://pinterest.com/pin/create/button/?url={{ page.url | absolute_url | uri_escape }}&media={{ page.image | prepend: site.url | uri_escape }}" target="_blank" title="Pin it"><img alt="Pin it" src="/assets/images/social_flat_rounded_rects_svg/Pinterest.svg" /></a></li>
-    <li><a href="http://www.reddit.com/submit?url={{ page.url | absolute_url | uri_escape }}&title={{ page.title | prepend: "Check out Chicken On A Bun's review of " | uri_escape }}" target="_blank" title="Submit to Reddit"><img alt="Submit to Reddit" src="/assets/images/social_flat_rounded_rects_svg/Reddit.svg" /></a></li>
-    <li><a href="mailto:?subject={{ page.title | prepend: "Check out Chicken On A Bun's review of " | uri_escape }}&body={{ page.url | absolute_url | uri_escape }}" target="_blank" title="Send email"><img alt="Send email" src="/assets/images/social_flat_rounded_rects_svg/Email.svg" /></a></li>
-  </ul>
+<div class="posts">
+  <section class="post">
+    <header class="post-header">
+      <h2 class="post-title">{{ page.title }}</h2>
+
+      <p class="post-meta">
+        <p><b>Rating?</b> {{ page.rating }}/10</p>
+        {% if page.side-order %}<p><b>What to order on the side?</b> {{ page.side-order }}</p>{% endif %}
+        <p>
+          <b>Where?</b> {{ page.address }}{% if page.multiple-loc %} (multiple locations in {{ page.multiple-loc }}){% endif %}
+        </p>
+        <p>
+          <b>Links?</b> {% if page.website %}<a href="{{ page.website }}" target="_blank">Website</a> | {% endif %}<a href="{{ page.foursquare-link }}" target="_blank">Foursquare</a>
+        </p>
+      </p>
+    </header>
+
+    <div class="pure-g post-description">
+      <div class="pure-u-1 pure-u-md-1-2">
+        <div class="l-box">
+          {{ content }}
+        </div>
+      </div>
+
+      <div class="pure-u-1 pure-u-md-1-2">
+        {% if page.image %}<img class="pure-img-responsive" src="{{ page.image }}" alt="{{ page.title }} sandwich" />{% endif %}
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="pure-menu pure-menu-horizontal">
+        <ul class="share-buttons">
+          <li class="pure-menu-item"><a class="pure-menu-link" href="https://www.facebook.com/sharer/sharer.php?u={{ page.url | absolute_url | uri_escape }}&quote={{ page.title | prepend: "Check out Chicken On A Bun's review of " | uri_escape }}" title="Share on Facebook" target="_blank"><img alt="Share on Facebook" src="/assets/images/social_flat_rounded_rects_svg/Facebook.svg" /></a></li>
+          <li class="pure-menu-item"><a class="pure-menu-link" href="https://twitter.com/intent/tweet?source={{ page.url | absolute_url | uri_escape }}&text={{ page.title | prepend: "Check out Chicken On A Bun's review of " | uri_escape }}:%20{{ page.url | absolute_url | uri_escape }}" target="_blank" title="Tweet"><img alt="Tweet" src="/assets/images/social_flat_rounded_rects_svg/Twitter.svg" /></a></li>
+          <li class="pure-menu-item"><a class="pure-menu-link" href="http://pinterest.com/pin/create/button/?url={{ page.url | absolute_url | uri_escape }}&media={{ page.image | prepend: site.url | uri_escape }}" target="_blank" title="Pin it"><img alt="Pin it" src="/assets/images/social_flat_rounded_rects_svg/Pinterest.svg" /></a></li>
+          <li class="pure-menu-item"><a class="pure-menu-link" href="http://www.reddit.com/submit?url={{ page.url | absolute_url | uri_escape }}&title={{ page.title | prepend: "Check out Chicken On A Bun's review of " | uri_escape }}" target="_blank" title="Submit to Reddit"><img alt="Submit to Reddit" src="/assets/images/social_flat_rounded_rects_svg/Reddit.svg" /></a></li>
+          <li class="pure-menu-item"><a class="pure-menu-link" href="mailto:?subject={{ page.title | prepend: "Check out Chicken On A Bun's review of " | uri_escape }}&body={{ page.url | absolute_url | uri_escape }}" target="_blank" title="Send email"><img alt="Send email" src="/assets/images/social_flat_rounded_rects_svg/Email.svg" /></a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
 </div>

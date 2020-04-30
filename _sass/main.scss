@@ -1,77 +1,68 @@
-$layout-breakpoint: 850px;
-
-$background-color: #feb;
-$box-color: #ffe;
+$background-color: #fff;
+$box-color: #c66c33;
+$dark-accent-color: #4d486d;
+$light-accent-color: #d4c688;
+$light-text-color: #999;
 $text-color: #444;
 
-.distance-indicator {
-  box-sizing: border-box;
-  font-style: italic;
-  padding: 10px;
-  position: absolute;
-  right: 0;
-  text-align: right;
-  top: 0;
-  width: 200px;
+.content-subhead {
+  border-bottom: 1px solid $light-text-color;
+  color: $light-text-color;
+  font-size: 80%;
+  font-weight: 500;
+  letter-spacing: .1em;
+  padding: .4em 0;
+  text-transform: uppercase;
 }
 
-.header-icon {
-  height: 30px;
-  vertical-align: middle;
+a {
+  color: $dark-accent-color;
+  text-decoration: none;
 }
 
-.highlight {
-  font-weight: bold;
-}
-
-.restaurant {
-  background-color: $box-color;
-  margin-bottom: 20px;
-  padding: 20px;
-  position: relative;
-}
-
-.sandwich-image {
-  display: block;
-  margin: 20px auto;
-  max-width: 100%;
+a:hover,
+a:focus {
+  text-decoration: underline;
 }
 
 body {
   background-color: $background-color;
-  color: $text-color;
-  font-family: "Courier New", Courier, monospace;
-  margin: 10px auto;
-  padding: 0 20px;
-  width: auto;
 }
 
-h1 {
-  font-size: 30px;
+.brand-title {
+  margin: 0;
+  text-transform: uppercase;
 }
 
-h2 {
-  margin-top: 0;
-
-  a {
-    color: $text-color;
-    text-decoration: none;
-  }
+.header {
+  margin: 2em auto;
+  text-align: center;
+  top: auto;
 }
 
-nav {
-  margin-bottom: 20px;
+.sidebar {
+  background: $box-color;
+  color: $background-color;
 }
 
-p {
-  margin: 10px 0;
+.coab-logo {
+  height: 1.2em;
+  vertical-align: text-bottom;
+}
+
+.distance-indicator {
+  float: right;
+  margin-left: 1em;
+}
+
+.l-box {
+  padding-right: 2em;
 }
 
 .share-buttons {
   list-style: none;
   margin-bottom: 0;
   padding: 0;
-  text-align: center;
 
   img {
     width: 32px;
@@ -82,25 +73,88 @@ p {
   }
 }
 
-@media screen and (min-width: $layout-breakpoint) {
-  // Desktop stylesheet
-  .header-icon {
-    height: 60px;
+.nav-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item {
+  display: inline-block;
+}
+
+.nav-item a {
+  background: transparent;
+  border: 2px solid $light-accent-color;
+  color: $background-color;
+  font-size: 85%;
+  letter-spacing: .05em;
+  margin-top: 1em;
+  text-transform: uppercase;
+}
+
+.nav-item a:hover,
+.nav-item a:focus {
+  border: 2px solid $dark-accent-color;
+  text-decoration: none;
+}
+
+.content {
+  padding: 2em 1em 0;
+}
+
+.post {
+  padding-bottom: 2em;
+}
+
+.post-title {
+  color: $dark-accent-color;
+  font-size: 2em;
+  margin-bottom: .2em;
+}
+
+.post-description {
+  color: $text-color;
+  line-height: 1.8em;
+}
+
+.post-meta {
+  color: $light-text-color;
+  font-size: 90%;
+  margin: 0;
+}
+
+.pure-img-responsive {
+  height: auto;
+  max-width: 100%;
+}
+
+@media (min-width: 48em) {
+  .coab-logo {
+    display: block;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100px;
   }
 
-  body {
-    margin: 60px auto;
-    padding: 0;
-    width: $layout-breakpoint;
+  .content {
+    margin-left: 25%;
+    padding: 2em 3em 0;
   }
 
-  h1 {
-    font-size: 60px;
+  .header {
+    margin: 75% 2em 0;
+    text-align: center;
   }
 
-  .share-buttons {
-    img {
-      width: 40px;
-    }
+  .sidebar {
+    bottom: 0;
+    position: fixed;
+    top: 0;
+  }
+
+  .footer {
+    text-align: center;
   }
 }
