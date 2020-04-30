@@ -21,7 +21,7 @@ title: Chicken On A Bun
             <b>Where?</b> {{ post.address }}{% if post.multiple-loc %} (multiple locations in {{ post.multiple-loc }}){% endif %}
           </p>
           <p>
-            <b>Links?</b> {% if post.website %}<a href="{{ post.website }}" target="_blank">Website</a> | {% endif %}<a href="{{ post.foursquare-link }}" target="_blank">Foursquare</a>
+            <b>Links?</b> {% if post.website %}<a href="{{ post.website }}" target="_blank" rel="noopener">Website</a> | {% endif %}<a href="{{ post.foursquare-link }}" target="_blank" rel="noopener">Foursquare</a>
           </p>
         </p>
       </header>
