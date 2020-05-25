@@ -8,7 +8,7 @@ $text-color: #444;
 .content-subhead {
   border-bottom: 1px solid $light-text-color;
   color: $light-text-color;
-  font-size: 80%;
+  font-size: 1em;
   font-weight: 500;
   letter-spacing: .1em;
   padding: .4em 0;
@@ -56,7 +56,7 @@ body {
 }
 
 .l-box {
-  padding-right: 2em;
+  padding-right: 1em;
 }
 
 .share-buttons {
@@ -87,7 +87,7 @@ body {
   background: transparent;
   border: 2px solid $light-accent-color;
   color: $background-color;
-  font-size: 85%;
+  font-size: 0.9em;
   letter-spacing: .05em;
   margin-top: 1em;
   text-transform: uppercase;
@@ -120,13 +120,13 @@ body {
 
 .post-meta {
   color: $light-text-color;
-  font-size: 90%;
   margin: 0;
 }
 
 .pure-img-responsive {
   height: auto;
   max-width: 100%;
+  padding: 1em;
 }
 
 @media (min-width: 48em) {
