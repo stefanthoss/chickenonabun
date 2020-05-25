@@ -13,8 +13,8 @@ the inside. Unfortunately there's not a thick slab of chicken on this sandwich, 
 small and a bit on the dry side. Still, the spicy coleslaw makes up for it with the perfect amount of spiciness and
 crunch.
 
-We also have to talk about the potato puffs. If you don't want to come here for the chicken sandwich, you should for
-them. Just like the French roll, they're crispy on the outside and chewy on the inside. And don't forget to get the
+We also have to talk about the potato puffs. If you're not coming here for the chicken sandwich, you should for the
+potatoes. Just like the French roll, they're crispy on the outside and chewy on the inside. And don't forget to get the
 creamy truffle sauce to dip 'em in.
 
 If you like chicken sandwiches, you have to try this when you're in Berkeley! Grab it to go and enjoy it somewhere on
