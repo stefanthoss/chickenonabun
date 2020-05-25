@@ -1,4 +1,6 @@
 {
+    "name": "Chicken On A Bun",
+    "short_name": "Chicken On A Bun",
     "icons": [
         {
             "src": "/assets/icons/android-chrome-192x192.png",
@@ -13,5 +15,6 @@
     ],
     "theme_color": "#ffffff",
     "background_color": "#ffffff",
+    "start_url": "https://chickenonabun.com",
     "display": "standalone"
 }
