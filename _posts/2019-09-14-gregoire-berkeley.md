@@ -8,5 +8,14 @@ side-order: "Crispy potato puffs with white truffle essence"
 website: https://www.gregoirerestaurant.com
 ---
 
-So juicy, so flavorful, and the perfect breadroll - you have to try this when you're in Berkeley! Grab it to go and
-enjoy it somewhere on the UC campus.
+The highlight of this fried chicken sandwich is the fresh bread, the French roll is crusty on the outside and chewy on
+the inside. Unfortunately there's not a thick slab of chicken on this sandwich, the buttermilk chicken is not bad but
+small and a bit on the dry side. Still, the spicy coleslaw makes up for it with the perfect amount of spiciness and
+crunch.
+
+We also have to talk about the potato puffs. If you don't want to come here for the chicken sandwich, you should for
+them. Just like the French roll, they're crispy on the outside and chewy on the inside. And don't forget to get the
+creamy truffle sauce to dip 'em in.
+
+If you like chicken sandwiches, you have to try this when you're in Berkeley! Grab it to go and enjoy it somewhere on
+the UC Berkeley campus.
