@@ -6,9 +6,9 @@ var sortLabels = {
   location: "Nearby sandwiches",
 };
 
-function positionSuccess(position) {
+function sortRestaurantsByLocation(position) {
   currentCoords = [position.coords.latitude, position.coords.longitude];
-  console.warn("Current position: " + currentCoords);
+  console.info("Current position: " + currentCoords);
   sortRestaurants("location");
 }
 
@@ -27,11 +27,7 @@ function extractSortKey(elements, sortKey) {
     if (sortKey == "location") {
       if (sortingParam) {
         var restaurantCoords = JSON.parse(sortingParam);
-        distance = 0.6213712 * calcHaversineDistance(currentCoords, restaurantCoords);
-        obj.key = distance;
-        obj.element.getElementsByClassName("distance-indicator")[0].innerHTML = Math.round(distance) + " miles away";
-      } else {
-        obj.key = 99999;
+        obj.key = calcHaversineDistance(currentCoords, restaurantCoords);
       }
     } else {
       obj.key = sortingParam;
@@ -42,6 +38,10 @@ function extractSortKey(elements, sortKey) {
   return result;
 }
 
+function addDistanceLabel(item) {
+  item.element.getElementsByClassName("distance-label")[0].innerHTML = Math.round(0.6213712 * item.key) + " miles away";
+} 
+
 function sortRestaurants(sortKey) {
   var parent = document.getElementById("restaurant-list");
   var children = parent.getElementsByClassName("post");
@@ -51,6 +51,7 @@ function sortRestaurants(sortKey) {
   if (sortKey == "location") {
     // sort ascending
     elements.sort((a, b) => (a.key < b.key ? -1 : 1));
+    elements.forEach(addDistanceLabel);
   } else {
     // sort descending
     elements.sort((a, b) => (a.key < b.key ? 1 : -1));
@@ -70,7 +71,7 @@ function sortEvent() {
   }
 
   if (sortingKey == "location") {
-    navigator.geolocation.getCurrentPosition(positionSuccess, positionError);
+    navigator.geolocation.getCurrentPosition(sortRestaurantsByLocation, positionError);
   } else {
     sortRestaurants(sortingKey);
   }
