@@ -14,7 +14,7 @@ function sortRestaurantsByLocation(position) {
 
 function positionError(error) {
   console.warn("Could not get current position (" + error.code + "): " + error.message);
-  window.history.back();
+  window.location.hash = "";
 }
 
 function extractSortKey(elements, sortKey) {
