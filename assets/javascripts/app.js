@@ -24,11 +24,8 @@ function extractSortKey(elements, sortKey) {
     var obj = {};
     obj.element = elements[i];
     var sortingParam = elements[i].getAttribute("data-" + sortKey);
-    if (sortKey == "location") {
-      if (sortingParam) {
-        var restaurantCoords = JSON.parse(sortingParam);
-        obj.key = calcHaversineDistance(currentCoords, restaurantCoords);
-      }
+    if (sortKey == "location" && sortingParam) {
+      obj.key = calcHaversineDistance(currentCoords, JSON.parse(sortingParam));
     } else {
       obj.key = sortingParam;
     }
