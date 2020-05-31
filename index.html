@@ -9,7 +9,7 @@ title: Chicken On A Bun
     {% for post in site.posts %}
     <section class="post" data-date="{{ post.date }}" data-location="{% geocode_address post.address %}" data-rating="{{ post.rating | prepend: '0000' | slice: -4, 4 }}">
       <header class="post-header">
-        <p class="distance-indicator"></p>
+        <p class="distance-label"></p>
 
         <h2 class="post-title">
           <a href="{{ post.url }}">{{ post.title }}{% if post.rating %} ({{ post.rating }}/10){% endif %}</a>
