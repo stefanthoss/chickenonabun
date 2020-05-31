@@ -23,12 +23,12 @@ function extractSortKey(elements, sortKey) {
   for (i = 0; i < elements.length; i++) {
     var obj = {};
     obj.element = elements[i];
-    var sortingParam = elements[i].getAttribute("data-" + sortKey);
-    if (sortKey == "location" && sortingParam) {
-      obj.key = calcHaversineDistance(currentCoords, JSON.parse(sortingParam));
-    } else {
-      obj.key = sortingParam;
+    obj.key = elements[i].getAttribute("data-" + sortKey);
+
+    if (sortKey == "location") {
+      obj.key = calcHaversineDistance(currentCoords, JSON.parse(obj.key));
     }
+
     result.push(obj);
   }
 
@@ -42,16 +42,15 @@ function addDistanceLabel(item) {
 function sortRestaurants(sortKey) {
   var parent = document.getElementById("restaurant-list");
   var children = parent.getElementsByClassName("post");
-
   var elements = extractSortKey(children, sortKey);
 
   if (sortKey == "location") {
     // sort ascending
-    elements.sort((a, b) => (a.key < b.key ? -1 : 1));
+    elements.sort((a, b) => (a.key - b.key));
     elements.forEach(addDistanceLabel);
   } else {
     // sort descending
-    elements.sort((a, b) => (a.key < b.key ? 1 : -1));
+    elements.sort((a, b) => (b.key - a.key));
   }
 
   for (i = 0; i < elements.length; i++) {
@@ -60,20 +59,19 @@ function sortRestaurants(sortKey) {
 }
 
 function sortEvent() {
-  var sortingKey;
+  var sortKey = "date";
+
   if (location.hash) {
-    sortingKey = location.hash.substr(1);
-  } else {
-    sortingKey = "date";
+    sortKey = location.hash.substr(1);
   }
 
-  if (sortingKey == "location") {
+  if (sortKey == "location") {
     navigator.geolocation.getCurrentPosition(sortRestaurantsByLocation, positionError);
   } else {
-    sortRestaurants(sortingKey);
+    sortRestaurants(sortKey);
   }
 
-  document.getElementById("sort-label").innerHTML = sortLabels[sortingKey];
+  document.getElementById("sort-label").innerHTML = sortLabels[sortKey];
 }
 
 if (window.location.pathname == "/") {
