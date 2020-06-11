@@ -7,13 +7,10 @@ before_install:
   - openssl aes-256-cbc -K $encrypted_2db9d87a404b_key -iv $encrypted_2db9d87a404b_iv -in .travis/github_deploy_key.enc -out .travis/github_deploy_key -d
   - gem install bundler
 before_script:
-  - npm install mocha
-  - yarn global add nyc
   - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
   - chmod +x ./cc-test-reporter
   - ./cc-test-reporter before-build
 script:
-  - nyc --reporter=lcov yarn run test
   - JEKYLL_ENV=production bundle exec jekyll build
 after_script:
   - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
