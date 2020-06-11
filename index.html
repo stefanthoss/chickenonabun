@@ -10,7 +10,8 @@ title: Chicken On A Bun
     <section class="post" data-date="{{ post.date | date: '%s' }}" data-location="{% geocode_address post.address %}" data-rating="{{ post.rating }}">
       <header class="post-header">
         <p class="distance-label"></p>
-        <h2 class="post-title">{{ post.title }}{% if post.rating %} ({{ post.rating }}/10){% endif %}</h2>
+        <a href="{{ post.url }}"><h2 class="post-title">{{ post.title }}</h2></a>
+        {% if post.rating %}<div>{% chicken_rating post.rating %}</div>{% endif %}
       </header>
 
       <div class="pure-g post-description">
@@ -20,12 +21,15 @@ title: Chicken On A Bun
               <b>Where?</b> {{ post.address }}{% if post.multiple-loc %} (multiple locations in {{ post.multiple-loc }}){% endif %}
             </p>
           </div>
+
           <div class="l-box">
             {{ post.excerpt }}
-            <p><b><a href="{{ post.url }}">Continue reading...</a></b></p>
+            <p>
+              <b><a href="{{ post.url }}">Continue reading...</a></b>
+            </p>
           </div>
         </div>
-  
+
         <div class="pure-u-1 pure-u-md-1-3">
           {% if post.image %}<img class="pure-img-responsive" src="{{ post.image }}" alt="{{ post.title }} sandwich" />{% endif %}
         </div>
