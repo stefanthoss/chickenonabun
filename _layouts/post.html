@@ -16,6 +16,7 @@ layout: default
         <p>
           <b>Links?</b> {% if page.website %}<a href="{{ page.website }}" target="_blank" rel="noopener">Website</a> | {% endif %}<a href="{{ page.foursquare-link }}" target="_blank" rel="noopener">Foursquare</a>
         </p>
+        <p>Review published on {{ page.date | date: '%B %d, %Y' }}.</p>
       </div>
     </header>
 
