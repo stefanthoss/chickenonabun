@@ -1,9 +1,9 @@
 # This class provides a liquid tag that prints a rating with 10 chicken icons.
 class ChickenRatingTag < Liquid::Tag
   COLOR_ICON_HTML = '<img src="/assets/icons/chicken.png" alt="Color chicken"' \
-                    ' title="Color chicken icon" class="rating-icon" />'
+                    ' title="Color chicken icon" class="rating-icon" />'.freeze
   BW_ICON_HTML = '<img src="/assets/icons/chicken-bw.png" alt="BW chicken"' \
-                 ' title="Black/white chicken icon" class="rating-icon" />'
+                 ' title="B/W chicken icon" class="rating-icon" />'.freeze
 
   def initialize(tag_name, rating, tokens)
     super
