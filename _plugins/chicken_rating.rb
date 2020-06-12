@@ -1,5 +1,10 @@
 # This class provides a liquid tag that prints a rating with 10 chicken icons.
 class ChickenRatingTag < Liquid::Tag
+  COLOR_ICON_HTML = '<img src="/assets/icons/chicken.png" alt="Color chicken"' \
+                    ' title="Color chicken icon" class="rating-icon" />'
+  BW_ICON_HTML = '<img src="/assets/icons/chicken-bw.png" alt="BW chicken"' \
+                 ' title="Black/white chicken icon" class="rating-icon" />'
+
   def initialize(tag_name, rating, tokens)
     super
     @rating = rating
@@ -9,12 +14,8 @@ class ChickenRatingTag < Liquid::Tag
     html = ''
     r = context[@rating].to_i
     unless r.nil?
-      for i in 1..r
-        html.concat("<img src=\"/assets/icons/chicken.png\" alt=\"Chicken #{i}\" title=\"Rating #{r}/10\" class=\"rating-icon\" />\n")
-      end
-      for i in r..9
-        html.concat("<img src=\"/assets/icons/chicken-bw.png\" alt=\"Chicken #{i}\" title=\"Rating #{r}/10\" class=\"rating-icon\" />\n")
-      end
+      (1..r).each { html.concat(COLOR_ICON_HTML) }
+      (r..9).each { html.concat(BW_ICON_HTML) }
     end
     html
   end
