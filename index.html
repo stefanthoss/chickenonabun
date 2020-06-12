@@ -11,8 +11,9 @@ title: Chicken On A Bun
       <header class="post-header">
         <p class="distance-label"></p>
         <a href="{{ post.url }}"><h2 class="post-title">{{ post.title }}</h2></a>
-        {% if post.rating %}<div>{% chicken_rating post.rating %}</div>{% endif %}
       </header>
+
+      {% if post.rating %}<div class="pure-g post-rating">{% chicken_rating post.rating %}</div>{% endif %}
 
       <div class="pure-g post-description">
         <div class="pure-u-1 pure-u-md-2-3">
