@@ -59,13 +59,17 @@ body {
   padding-right: 2em;
 }
 
+.rating-icon {
+  width: 2em;
+}
+
 .share-buttons {
   list-style: none;
   margin-bottom: 0;
   padding: 0;
 
   img {
-    width: 32px;
+    width: 2em;
   }
 
   li {
