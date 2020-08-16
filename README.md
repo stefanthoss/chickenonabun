@@ -26,8 +26,9 @@ jekyll server -w --drafts
 
 * CSS framework: [Pure.css](https://purecss.io)
 * Emojis: [OpenMoji](https://openmoji.org)
-* Geocoding: [OpenStreetMap Nominatim](https://nominatim.openstreetmap.org/)
 * Favicon generator: [RealFaviconGenerator](https://realfavicongenerator.net)
+* Geocoding: [OpenStreetMap Nominatim](https://nominatim.openstreetmap.org/)
+* MiniMagick gem: [Jekyll-MiniMagick-new](https://github.com/MattKevan/Jekyll-MiniMagick-new)
 * Social share buttons: [Simple Sharing Buttons Generator](https://simplesharingbuttons.com)
 
 ## License
