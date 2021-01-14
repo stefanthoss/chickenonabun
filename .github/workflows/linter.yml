@@ -19,6 +19,7 @@ jobs:
         uses: github/super-linter@v3
         env:
           DEFAULT_BRANCH: master
+          FILTER_REGEX_EXCLUDE: "_plugins/jekyll_minimagick.rb"
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           MARKDOWN_CONFIG_FILE: ".markdownlint.json"
           RUBY_CONFIG_FILE: ".rubocop.yml"
