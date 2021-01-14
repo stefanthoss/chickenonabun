@@ -20,7 +20,7 @@ jobs:
         env:
           CSS_FILE_NAME: ".stylelintrc.json"
           DEFAULT_BRANCH: master
-          FILTER_REGEX_EXCLUDE: "(LICENSE.md|_plugins/jekyll_minimagick.rb)"
+          FILTER_REGEX_EXCLUDE: "(_plugins/jekyll_minimagick.rb|assets/css/|LICENSE.md)"
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           MARKDOWN_CONFIG_FILE: ".markdownlint.json"
           RUBY_CONFIG_FILE: ".rubocop.yml"
