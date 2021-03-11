@@ -23,7 +23,6 @@ jekyll server -w --drafts
 ## Tools
 
 * CSS framework: [Pure.css](https://purecss.io)
-* Emojis: [OpenMoji](https://openmoji.org)
 * Favicon generator: [RealFaviconGenerator](https://realfavicongenerator.net)
 * Geocoding: [OpenStreetMap Nominatim](https://nominatim.openstreetmap.org/)
 * MiniMagick gem: [Jekyll-MiniMagick-new](https://github.com/MattKevan/Jekyll-MiniMagick-new)
@@ -31,9 +30,8 @@ jekyll server -w --drafts
 
 ## License
 
-![CC BY-SA 4.0](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)
-![GNU GPLv3](https://www.gnu.org/graphics/gplv3-88x31.png)
+The content of [Chicken On A Bun](https://chickenonabun.com/) is licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/).
 
-The content of this project itself is licensed under the [Creative Commons Attribution-ShareAlike 4.0 International
-License](https://creativecommons.org/licenses/by-sa/4.0/), and the underlying source code used to format and display
-that content is licensed under the [GNU General Public License v3.0](LICENSE.md).
+The underlying source code used to format and display that content is licensed under [GNU General Public License v3](https://www.gnu.org/licenses/gpl-3.0.html).
+
+The [chicken emoji](https://openmoji.org/library/#emoji=1F414) is licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
