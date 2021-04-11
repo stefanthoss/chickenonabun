@@ -18,7 +18,6 @@ _site/
 /vendor
 bbin/
 bin/
-coverage
 gh-pages/
 pkg/
 test/dest
