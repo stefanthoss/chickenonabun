@@ -16,13 +16,14 @@ $text-color: #444;
 }
 
 a {
-  color: $dark-accent-color;
-  text-decoration: none;
+  color: $text-color;
+  text-decoration: underline;
 }
 
 a:hover,
 a:focus {
-  text-decoration: underline;
+  color: $dark-accent-color;
+  text-decoration: none;
 }
 
 body {
