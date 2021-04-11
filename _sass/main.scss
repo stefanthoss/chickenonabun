@@ -16,13 +16,14 @@ $text-color: #444;
 }
 
 a {
-  color: $dark-accent-color;
-  text-decoration: none;
+  color: $text-color;
+  text-decoration: underline;
 }
 
 a:hover,
 a:focus {
-  text-decoration: underline;
+  color: $dark-accent-color;
+  text-decoration: none;
 }
 
 body {
@@ -122,6 +123,11 @@ body {
   color: $dark-accent-color;
   font-size: 2em;
   margin-bottom: 0.2em;
+}
+
+.post-title a {
+  color: $dark-accent-color;
+  text-decoration: none;
 }
 
 .post-description {
