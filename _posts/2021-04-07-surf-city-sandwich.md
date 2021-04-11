@@ -9,7 +9,7 @@ website: https://www.surfcitysandwich.com/
 ---
 
 Surf City Sandwich is a great sandwich spot with plenty of flavorful and interesting sandwiches. Most importantly, they
-have a fried chicken sandwich called the *Chicken Cowabunga*. The chicken sandwich is pretty good although it falls a
+have a fried chicken sandwich called the *Chicken Cowabunga*. The chicken sandwich is pretty good, although it falls a
 bit short compared to their other sandwiches.
 
 The fried chicken breast is not the most flavorful but relatively juicy and stayed surprisingly crisp even after the
