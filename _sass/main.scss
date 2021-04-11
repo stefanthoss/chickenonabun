@@ -125,6 +125,11 @@ body {
   margin-bottom: 0.2em;
 }
 
+.post-title a {
+  color: $dark-accent-color;
+  text-decoration: none;
+}
+
 .post-description {
   color: $text-color;
   line-height: 1.8em;

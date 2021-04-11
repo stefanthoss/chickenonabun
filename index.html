@@ -10,7 +10,7 @@ title: Chicken On A Bun
     <section class="post" data-date="{{ post.date | date: '%s' }}" data-location="{% geocode_address post.address %}" data-rating="{{ post.rating }}">
       <header class="post-header">
         <p class="distance-label"></p>
-        <a href="{{ post.url }}"><h2 class="post-title">{{ post.title }}</h2></a>
+        <h2 class="post-title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
       </header>
 
       {% if post.rating %}<div class="pure-g post-rating">{% chicken_rating post.rating %}</div>{% endif %}
