@@ -4,7 +4,7 @@ address: "727 N Broadway #128, Los Angeles, CA 90012"
 foursquare-link: https://foursquare.com/v/howlin-rays/55773340498ee2c0817e9170
 image: /assets/images/medium/howlin-rays.jpg
 rating: 10
-multiple-loc: "Los Angeles"
+multiple-loc: "second location in Pasadena"
 side-order: "Shake fries"
 website: https://howlinrays.com/
 ---
@@ -20,6 +20,6 @@ breast. How they keep such a thick chunk of white meat so juicy is beyond us! We
 which has some sort of magic *je ne sais quoi*. The sandwich comes with a sweet and tangy slaw with onions, comeback
 sauce, and pickles. The spice level goes from *Country* (without spice) to *Howlin* (super spicy). We'd go for *Medium*
 if you want a spicy sandwich and *Medium Plus* if you want it a little spicier. In our experience, anything above that
-and the heat overpowers your enjoyment of your sandwich. 
+and the heat overpowers your enjoyment of your sandwich.
 
 Grab a side of shake fries, and you have the perfect fried chicken sandwich meal.
