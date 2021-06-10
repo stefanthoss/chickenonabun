@@ -11,7 +11,7 @@ website: https://howlinrays.com/
 
 The perfect fried chicken sandwich exists! If you're from SoCal, you have almost certainly heard of the legendary
 Howlin' Ray's. The wait used to take at least an hour, and we are not the biggest fans of waiting that long for food.
-As of June 2021, you ~~are able to~~ must pay a bunch of Postmates fees to get it delivered, presumably to a random
+As of June 2021, you ~~are able to~~ *must* pay a bunch of Postmates fees to get it delivered, presumably to a random
 parking lot in Chinatown if you live outside the actual delivery area. For us, it was worth the extra fees to avoid
 waiting in line.
 

@@ -10,9 +10,9 @@ website: https://thegreatmaple.com
 ---
 
 The *Spicy Fried Chicken Sandwich*, which is part of the all day menu at Great Maple, boasts a large piece of chicken,
-good bun, and slaw that is on par with others we’ve tried. Unfortunately, the juicy dark meat lacks flavor. The
+good bun, and slaw that is on par with others we've tried. Unfortunately, the juicy dark meat lacks flavor. The
 highlight of the sandwich is the slightly spicy mayo which gives the sandwich a subtle kick. 
 
-Pay the upcharge for the more traditional Parmesan truffle fries (totally worth it!). If you’re feeling *really* fancy,
+Pay the upcharge for the more traditional Parmesan truffle fries (totally worth it!). If you're feeling *really* fancy,
 order the portabello mushroom fries from the “Shares” portion of the menu; these come in a massive shareable portion
 with a side of basil pesto aioli.
