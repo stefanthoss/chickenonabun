@@ -9,7 +9,7 @@ side-order: "RTR Salad or Umami Fries"
 website: https://www.rtrotisserie.com/
 ---
 
-RT Rotisserie has a lot of chicken dishes but the one to get is *Sally Hurricane’s Southern Fried Chicken Sandwich*.
+RT Rotisserie has a lot of chicken dishes but the one to get is *Sally Hurricane's Southern Fried Chicken Sandwich*.
 Not sure whether it is actually healthier than your usual fried chicken sandwich but it definitely feels like it. They
 use a delicious yogurt sauce instead of the usual mayo which pairs well with the slaw and pickled onions. The chicken
 is not very crispy, but it's juicy and flavorful.
