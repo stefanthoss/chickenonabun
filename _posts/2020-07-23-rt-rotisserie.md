@@ -3,7 +3,7 @@ title: "RT Rotisserie"
 address: "1531 Main St, Redwood City, CA 94163"
 foursquare-link: https://foursquare.com/v/doordash-kitchens/5f2b70b7ac280a6793143e41
 image: /assets/images/medium/rt-rotisserie.jpg
-multiple-loc: "San Francisco"
+multiple-loc: "multiple locations in San Francisco"
 rating: 8
 side-order: "RTR Salad or Umami Fries"
 website: https://www.rtrotisserie.com/

@@ -3,7 +3,7 @@ title: "The Chicken Shack"
 address: "2586 Churn Creek Rd, Redding, CA 96002"
 foursquare-link: https://foursquare.com/v/the-chicken-shack/530a5c8c498eb58694a86a2b
 image: /assets/images/medium/the-chicken-shack.jpg
-multiple-loc: "Redding"
+multiple-loc: "multiple locations in Redding"
 rating: 5
 side-order: "Garlic Fries"
 website: https://www.chickenshackredding.com/

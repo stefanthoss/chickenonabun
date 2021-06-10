@@ -2,7 +2,7 @@
 title: "Pine State Biscuits"
 address: "125 NE Schuyler St, Portland, OR 97212"
 foursquare-link: https://foursquare.com/v/pine-state-biscuits/5432f49a498e839d72b43e6b
-multiple-loc: "Portland"
+multiple-loc: "multiple locations in Portland"
 rating: 9
 side-order: "Pecan Pie"
 website: https://www.pinestatebiscuits.com
