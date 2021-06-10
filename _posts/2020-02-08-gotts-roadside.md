@@ -4,7 +4,7 @@ address: "San Francisco Ferry Building, San Francisco, CA 94111"
 foursquare-link: https://foursquare.com/v/gotts-roadside/44d3ade1f964a5204b361fe3
 image: /assets/images/medium/gotts-roadside.jpg
 rating: 7
-multiple-loc: "Northern California"
+multiple-loc: "multiple locations in Northern California"
 side-order: "Sweet potato fries with delicious house-made ranch"
 website: https://www.gotts.com
 ---

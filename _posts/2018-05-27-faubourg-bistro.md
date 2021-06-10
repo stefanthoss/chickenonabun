@@ -2,7 +2,7 @@
 title: "Faubourg Bistro"
 address:  "700 Burgundy St, New Orleans, LA 70116"
 foursquare-link: https://foursquare.com/v/faubourg-bistro/55e1015f498ed5127df87c9a
-multiple-loc: "New Orleans"
+multiple-loc: "multiple locations in New Orleans"
 website: https://faubourgbistro.com
 ---
 
