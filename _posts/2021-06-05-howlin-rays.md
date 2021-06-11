@@ -1,6 +1,6 @@
 ---
 title: "Howlin' Ray's"
-address: "727 N Broadway #128, Los Angeles, CA 90012"
+address: "727 N Broadway, Los Angeles, CA 90012"
 foursquare-link: https://foursquare.com/v/howlin-rays/55773340498ee2c0817e9170
 image: /assets/images/medium/howlin-rays.jpg
 rating: 10
