@@ -10,7 +10,12 @@ class GeocodeAddressTag < Liquid::Tag
     url = 'https://nominatim.openstreetmap.org/search?format=json&limit=1'\
           "&q=#{CGI.escape(context[@content])}"
     results = JSON.parse(URI.parse(url).open.read)
-    "[#{results.first['lat']},#{results.first['lon']}]" if results.any?
+    if results.any?
+      "[#{results.first['lat']},#{results.first['lon']}]"
+    else
+      Jekyll.logger.warn("Can't find coordinates for #{context[@content]}.")
+      ""
+    end
   end
 
   Liquid::Template.register_tag 'geocode_address', self

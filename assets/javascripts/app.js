@@ -26,7 +26,11 @@ function extractSortKey(elements, sortKey) {
     obj.key = elements[i].getAttribute("data-" + sortKey);
 
     if (sortKey == "location") {
-      obj.key = calcHaversineDistance(currentCoords, JSON.parse(obj.key));
+      if (obj.key) {
+        obj.key = calcHaversineDistance(currentCoords, JSON.parse(obj.key));
+      } else {
+        obj.key = 20015; // max distance between two points on Earth in km
+      }
     }
 
     result.push(obj);
