@@ -1,6 +1,6 @@
 ---
 title: "Great Maple"
-address: "Fashion Island, 1133 Newport Center Dr, Newport Beach, CA 92660"
+address: "1133 Newport Center Dr, Fashion Island, Newport Beach, CA 92660"
 foursquare-link: https://foursquare.com/v/great-maple-libations-seasonal-plates--pie/4e27058c18380c0d4dfc93e9
 image: /assets/images/medium/great-maple.jpg
 rating: 6
