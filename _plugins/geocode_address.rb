@@ -14,7 +14,7 @@ class GeocodeAddressTag < Liquid::Tag
       "[#{results.first['lat']},#{results.first['lon']}]"
     else
       Jekyll.logger.warn("Can't find coordinates for #{context[@content]}.")
-      ""
+      ''
     end
   end
 
