@@ -15,7 +15,7 @@ jobs:
       - name: Install ImageMagick
         run: |
           sudo apt-get update
-          sudo apt-get install libmagickwand-dev
+          sudo apt-get install ruby-mini-magick
 
       - uses: actions/cache@v2
         with:
