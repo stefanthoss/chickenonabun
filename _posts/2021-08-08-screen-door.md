@@ -2,6 +2,7 @@
 title: "Screen Door"
 address: "1131 NW Couch, Portland, OR 97209"
 foursquare-link: https://foursquare.com/v/screen-door/609c64dab4b40e4b9aad5317
+image: /assets/images/medium/screen-door.jpg
 multiple-loc: "two locations in Portland"
 rating: 10
 side-order: "Bloody Mary"

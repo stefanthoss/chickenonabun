@@ -2,6 +2,7 @@
 title: "Great Notion Brewing"
 address: "2204 NE Alberta St, Portland, OR 97211"
 foursquare-link: https://foursquare.com/v/great-notion-brewing/55fc84d2498e818369e083ce
+image: /assets/images/medium/great-notion-brewing.jpg
 multiple-loc: "multiple locations in Portland"
 rating: 6
 website: https://greatnotion.com
