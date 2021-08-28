@@ -10,7 +10,7 @@ website: https://greatnotion.com
 
 While looking for a spot for dinner, we found Great Notion Brewing and figured we’d grab some beers. As luck would have
 it, there is a teeny tiny food menu consisting of sandwiches. We saw the fried chicken sandwich on the menu and knew we
-had to try it. 
+had to try it.
 
 The sandwich consists of a heaping helping of very crispy fried chicken thigh, honey garlic vinaigrette slaw, and
 pickles all on a locally baked Dutch crunch roll (*swoons in Bay Area*). Not the best we’ve had, but we were pleasantly
