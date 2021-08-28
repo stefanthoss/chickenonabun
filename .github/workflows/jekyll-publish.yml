@@ -15,7 +15,7 @@ jobs:
       - name: Install ImageMagick
         run: |
           sudo apt-get update
-          sudo apt-get install imagemagick libmagickwand-dev
+          sudo apt-get install imagemagick --fix-missing
 
       - uses: actions/cache@v2
         with:
