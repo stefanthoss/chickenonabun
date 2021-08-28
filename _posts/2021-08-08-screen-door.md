@@ -11,7 +11,7 @@ website: https://screendoorrestaurant.com
 
 We can be a little skeptical when there’s a significant wait for any restaurant - after all, that’s how they always get
 you, right? With an hour long wait and swarms of people waiting outside? Nonetheless, our brunch experience at the
-Screen Door in Portland did not disappoint. 
+Screen Door in Portland did not disappoint.
 
 The fried chicken sandwich was perfection, sizable yet not too big, striking a delicate balance with a large piece of
 crispy chicken, a heap of creamy slaw, and a light and fresh bun. The sandwich was not spicy yet delivered big flavor.
