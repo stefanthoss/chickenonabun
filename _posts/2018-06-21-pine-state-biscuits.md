@@ -12,3 +12,7 @@ The biscuit is tender. The chicken is crispy. The gravy is smooth and flavorful.
 because you're a fan of biscuits or you like chickens on buns - you order *The Reggie*. There might be a wait, but this
 is the perfect breakfast. Especially when the amazing pecan pie is the seasonal pie, which you must get (with whipped
 cream, of course).
+
+Update August 2021: Since our first visit, they have also started offering specials and house-made pop tarts in seasonal
+flavors, which are divine. We had the Korean Fried Chicken biscuit (see photo) and blueberry pop tart, and neither
+disappointed. 
