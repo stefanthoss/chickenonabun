@@ -14,8 +14,8 @@ jobs:
 
       - name: Install ImageMagick
         run: |
-          sudo apt update
-          sudo apt install Imagemagick
+          sudo apt-get update
+          sudo apt-get install imagemagick
           identify -version
 
       - uses: actions/cache@v2
