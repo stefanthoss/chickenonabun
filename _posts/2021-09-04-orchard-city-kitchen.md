@@ -7,4 +7,7 @@ rating: 8
 website: https://orchardcitykitchen.com
 ---
 
-...
+Crispy crispy crispy! This fried chicken sandwich from the Brunch menu is crispy! We've never had such a satisfyingly
+crunchy cornflake-based breading - it simply breaks apart with every bite. The sandwich came with two thin pieces of
+chicken which were very juicy on the inside. The sandwich was pretty standard in terms of ingredients and well executed:
+nice bun, spicy mayo, and pickle slices in addition to a juicy pickle spear on the side.
