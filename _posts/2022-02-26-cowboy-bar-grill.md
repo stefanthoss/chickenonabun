@@ -8,6 +8,6 @@ side-order: "Fries"
 website: https://www.feltoncowboy.com
 ---
 
-The Cowboy Bar & Grill had a fried chicken sandwich as a special so we had to try it. Unfortunately it wasn’t very good
-and we should’ve stuck to one of their juicy burgers. The piece of chicken was extremely tough and dry, almost hard to
+The Cowboy Bar & Grill had a fried chicken sandwich as a special so we had to try it. Unfortunately it wasn't very good
+and we should've stuck to one of their juicy burgers. The piece of chicken was extremely tough and dry, almost hard to
 eat. The flavor was pretty good though with a spicy glaze on the chicken.

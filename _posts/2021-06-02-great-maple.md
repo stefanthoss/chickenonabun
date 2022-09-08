@@ -14,5 +14,5 @@ good bun, and slaw that is on par with others we've tried. Unfortunately, the ju
 highlight of the sandwich is the slightly spicy mayo which gives the sandwich a subtle kick.
 
 Pay the upcharge for the more traditional Parmesan truffle fries (totally worth it!). If you're feeling *really* fancy,
-order the portabello mushroom fries from the “Shares” portion of the menu; these come in a massive shareable portion
+order the portabello mushroom fries from the "Shares" portion of the menu; these come in a massive shareable portion
 with a side of basil pesto aioli.
