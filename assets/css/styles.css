@@ -1,0 +1,55 @@
+.content-subhead { border-bottom: 1px solid #999; color: #999; font-size: 1em; font-weight: 500; letter-spacing: 0.1em; padding: 0.4em 0; text-transform: uppercase; }
+
+a { color: #444; text-decoration: underline; }
+
+a:hover, a:focus { color: #4d486d; text-decoration: none; }
+
+body { background-color: #fff; }
+
+.brand-title { margin: 0; text-transform: uppercase; }
+
+.header { margin: 2em auto; text-align: center; top: auto; }
+
+.sidebar { background: #c66c33; color: #fff; }
+
+.coab-logo { height: 1.2em; vertical-align: text-bottom; width: 1.2em; }
+
+.distance-label { float: right; margin-left: 1em; }
+
+.l-box { padding-right: 2em; }
+
+.post-rating { width: 100%; }
+
+.rating-icon { height: 2em; width: 2em; }
+
+.share-buttons { list-style: none; margin-bottom: 0; padding: 0; }
+
+.share-buttons img { height: 2em; width: 2em; }
+
+.share-buttons li { display: inline; }
+
+.nav-list { list-style: none; margin: 0; padding: 0; }
+
+.nav-item { display: inline-block; }
+
+.nav-item a { background: transparent; border: 2px solid #d4c688; color: #fff; font-size: 0.9em; letter-spacing: 0.05em; margin-top: 1em; text-transform: uppercase; }
+
+.nav-item a:hover, .nav-item a:focus { border: 2px solid #4d486d; text-decoration: none; }
+
+.content { padding: 2em 1em 0; }
+
+.post { padding-bottom: 2em; }
+
+.post-title { color: #4d486d; font-size: 2em; margin-bottom: 0.2em; }
+
+.post-title a { color: #4d486d; text-decoration: none; }
+
+.post-description { color: #444; line-height: 1.8em; }
+
+.post-meta { color: #999; margin: 0; }
+
+.pure-img-responsive { height: auto; max-width: 100%; padding-top: 1em; }
+
+@media (min-width: 48em) { .coab-logo { display: block; height: 100px; margin-left: auto; margin-right: auto; width: 100px; } .content { margin-left: 25%; padding: 2em 3em 0; } .header { margin: 75% 2em 0; text-align: center; } .sidebar { bottom: 0; position: fixed; top: 0; } .footer { text-align: center; } }
+
+/*# sourceMappingURL=styles.css.map */
